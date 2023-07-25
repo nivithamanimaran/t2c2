@@ -865,16 +865,16 @@ function Home() {
                 <div className='col-6 col-lg-4'>
                   <div class="card w-100 card-color opacity-25">
                     <div class="card-body">
-                      <h5 class="card-title"><b>25+</b></h5>
-                      <p class="card-text">Products Delivered</p>
+                      <h5 class="card-title text-center "><b>25+</b></h5>
+                      <p class="card-text text-center ">Products Delivered</p>
                     </div>
                   </div>
                 </div>
                 <div className='col-6 col-lg-4'>
                   <div class="card w-100 card-color opacity-25">
                     <div class="card-body ">
-                      <h5 class="card-title "><b>40+</b></h5>
-                      <p class="card-text">Wizards at <br/>Work</p>
+                      <h5 class="card-title text-center "><b>40+</b></h5>
+                      <p class="card-text text-center ">Wizards at <br/>Work</p>
                     </div>
                   </div>
                 </div>
@@ -883,16 +883,16 @@ function Home() {
                 <div className='col-6 col-lg-4'>
                   <div class="card w-100 card-color opacity-25">
                     <div class="card-body ">
-                      <h5 class="card-title "><b>30+</b></h5>
-                      <p class="card-text">Technologies Deployed</p>
+                      <h5 class="card-title text-center "><b>30+</b></h5>
+                      <p class="card-text text-center ">Technologies Deployed</p>
                     </div>
                   </div>
                 </div>
                 <div className='col-6 col-lg-4'>
                   <div class="card w-100 card-color opacity-25">
                     <div class="card-body ">
-                      <h5 class="card-title "><b>4+</b></h5>
-                      <p class="card-text">Countries & Growing</p>
+                      <h5 class="card-title text-center "><b>4+</b></h5>
+                      <p class="card-text text-center ">Countries & Growing</p>
                     </div>
                   </div>
                 </div>
@@ -1045,6 +1045,9 @@ function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className='text-center mt-5'>
+        <button className='btn btn-dark rounded-5 px-3 '>Read More  <img src={arrow2} alt='arrow2' width='12%' /></button>
         </div>
       </div>
 
