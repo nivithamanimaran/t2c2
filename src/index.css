@@ -1,0 +1,241 @@
+/* *{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+} */
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.text-color{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 139px;
+}
+.text-colormob{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 103px;
+}
+.text-colormob2{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 106px;
+}
+.text-color3{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 187px;
+}
+.text-color3mob{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 141px;
+}
+.text-color4{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 184px;
+}
+.text-color5{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width: 248px;
+}
+
+.textcolor{
+  box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
+  width: 178px;
+}
+.textcolormob{
+  box-shadow: inset 0px -13px 0px 0px rgba(0, 115, 136, 1);
+  width: 134px;
+}
+.textcolor2{
+  box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
+  width: 105px;
+}
+.textcolor3mob{
+  box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
+  width: 274px;
+}
+/*navbar*/
+.navmenucolor {
+  color: #0799B8;
+}
+
+/*footer*/
+.footerbgcolor {
+  background-color: rgba(97, 159, 252, 0.44)
+}
+
+.footerimgposition {
+  position: absolute;
+  margin-top: -155px
+}
+
+.footercolor {
+  background: rgba(234, 234, 234, 1);
+}
+
+.footerimgposition {
+  position: absolute;
+  margin-top: -176px
+}
+
+/*home page*/
+.cardhover:hover{
+  background-color: #B9D5FE;
+  cursor: pointer;
+}
+.lapimgposition{
+  top: -140px;
+}
+.buttonColor {
+  background: #EDFCFF !important;
+  cursor: pointer;
+}
+
+.buttonColorhover:hover {
+  background: #EDFCFF !important;
+  cursor: pointer;
+}
+
+.contentbackground {
+  background: #E8E8E8;
+  border-radius: 2%;
+}
+
+.buttonbackgroundradiusleft {
+  background: #E8E8E8;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  overflow: hidden;
+}
+.buttonbackgroundradiusright {
+  background: #E8E8E8;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  overflow: hidden;
+}
+.positioncard{
+  top:144px;
+  left:86px;
+  width:33%
+}
+.positioncard2{
+  top:143px;
+  left:788px;
+  width:32%
+}
+.positioncardcenter{
+  top:-60px;
+  left: 440px;
+  width:32%
+}
+.tabs{
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+   border-bottom: 2px solid rgba(50, 197, 224, 1) !important;
+}
+.roundedcard {
+  /* border-radius: 50% !important; */
+  /* box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5); */
+}
+
+.roundedcard1 {
+  /* border-radius: 60% !important; */
+  border: none !important;
+  box-shadow: 4px 6px 22px 0px rgba(0, 0, 0, 0.5);
+}
+
+.homeheadcolor {
+  color: rgba(115, 190, 206, 1);
+}
+
+.slidecolor {
+  color: rgba(84, 177, 194, 1);
+}
+
+
+
+.img {
+  top: 41px;
+  right: 143px;
+}
+
+.card-color {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.carouselbuttoncolor {
+  border: solid 1px #636363 !important;
+  border-radius: 5px !important;
+  width: 70px !important;
+  margin: 0px !important;
+}
+
+.carouselbuttoncolor.active {
+  background: linear-gradient(to bottom, #00BCE4 100%, #73BECE 42%);
+}
+
+/*industries*/
+.bgcolor {
+  background: rgba(51, 51, 51, 1);
+}
+
+.cardwidth {
+  width: 50%;
+}
+
+.cardcolor {
+
+  background: rgba(245, 245, 245, 1);
+  border: rgba(187, 187, 187, 1);
+
+}
+
+/*about us*/
+.para-color {
+  background: rgba(185, 213, 254, 1);
+}
+
+.minus {
+  color: rgba(50, 197, 224, 1);
+
+}
+
+.box-color {
+  background: rgba(51, 51, 51, 1);
+}
+.card-overlay {
+  background: rgba(66, 66, 66, 0.5);
+}
+.textOverlap {
+  position: absolute;
+  background: rgba(185, 213, 254, 1);
+  padding: 28px;
+  right: 5%;
+}
+
+.textOverlaptwo {
+  position: absolute;
+  background: rgba(185, 213, 254, 1);
+  padding: 28px;
+  left: 5%;
+}
+.headalign{
+  position: absolute;
+  padding:28px;
+  left:6%;
+  top:55%
+}
+.paraalign{
+  position: absolute;
+  padding:28px;
+left:2%;
+  top:48%
+}
+
+.max {
+  min-height: 58px;
+}
