@@ -7,6 +7,7 @@ import Footer from './containers/Footer/Footer';
 import Expertise from './containers/Expertize/Expertise';
 import Aboutus from './containers/Aboutus/Aboutus';
 import Getintouch from './containers/Getintouch/Getintouch';
+import Contactus from './containers/Contactus/Contactus';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <Route path='expertise' element={<Expertise/>}/>
      <Route path='aboutus' element={<Aboutus/>}/>
      <Route path='getintouch' element={<Getintouch/>}/>
+     <Route path='contactus' element={<Contactus/>}/>
       </Routes>
     </BrowserRouter>
     </>
