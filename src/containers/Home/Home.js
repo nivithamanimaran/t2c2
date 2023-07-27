@@ -67,7 +67,8 @@ import development from '../../assests/Homepage/development.png'
 import ecommerce from '../../assests/Homepage/ecommerce.png'
 import team from '../../assests/Homepage/team.png'
 import ux from '../../assests/Homepage/ux.png'
-
+import realworld from '../../assests/Homepage/realworld.png'
+import processmob from '../../assests/Homepage/processmob.png'
 
 function Home() {
   const [number, setNumber] = useState(0);
@@ -304,7 +305,8 @@ function Home() {
           </div>
           <div className='row d-flex d-sm-flex d-md-flex d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
             <div className='col-12 mb-5'>
-              <div className='row d-flex justify-content-center gap-4 relative'>
+            <img src={processmob} className='img-fluid' alt='processmob'/>
+              {/* <div className='row d-flex justify-content-center gap-4 relative'>
                 <div className='col-10 col-lg-3 ps-4'>
                   <img src={leftc} className='img-fluid position-absolute left' alt='left' />
                   <div className="card mt-5 mt-lg-0 mobcard ">
@@ -360,7 +362,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -592,7 +594,7 @@ function Home() {
         </div>
       </div >
       {/*cards block*/}
-      < div className='container pt-5' >
+      < div className='container pt-lg-5' >
         <div className='row pt-5 d-none d-sm-none d-md-none d-lg-block'>
           <div className='col'>
             <div className='row'>
@@ -970,11 +972,10 @@ function Home() {
                 <div className='col-12 col-md-10 col-lg-10 mt-5'>
                   <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p>
                 </div>
-                <img src={success} className='img-fluid d-none d-sm-none d-md-block d-md-block' alt='success' />
+                <img src={realworld} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='realworld'/>
               </div>
             </div>
           </div>
-          <img src={map} className='img-fluid image d-none d-sm-none d-md-block d-lg-block ' alt='map' width='50%' />
           <img src={map} className='img-fluid  d-block d-sm-block d-md-none d-lg-none ' alt='map' />
         </div>
       </div >
