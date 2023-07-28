@@ -67,9 +67,7 @@ import development from '../../assests/Homepage/development.png'
 import ecommerce from '../../assests/Homepage/ecommerce.png'
 import team from '../../assests/Homepage/team.png'
 import ux from '../../assests/Homepage/ux.png'
-import realworld from '../../assests/Homepage/realworld.png'
-import processmob from '../../assests/Homepage/processmob.png'
-import '../../../src/index.css'
+
 
 function Home() {
   const [number, setNumber] = useState(1);
@@ -241,14 +239,128 @@ function Home() {
           </div>
 
           {/*cards overlap block*/}
-          <div className='row d-none d-sm-none d-md-flex d-lg-flex justify-content-center '>
-            <div className='col-10 position-absolute'>
-              <img src={process} className='col-12 bubbles' alt='process' />
+          <div className='row d-none d-sm-none d-md-none d-lg-flex justify-content-center p-lg-5 p-md-5 mb-lg-5'>
+            <div className='col-12 position-absolute'>
+              <img src={process} className='img-fluid' alt='process'/>
+              {/* <div className='row d-flex justify-content-center gap-5 relative'>
+                <div className='col-3 '>
+                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionleft d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
+                  <div className="card mt-5 mt-lg-0  border-0  p-4 circle" style={{ width: '100%', height: '320px' }}>
+                    <div className='row d-flex justify-content-center'>
+                      <div className='col-4'>
+                        <div className='card p-3 roundedcard1'>
+                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-2'>
+                        <p className='mt-lg-3 text-center'><b>Idea to product</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-3 '>
+                  <img src={ourprocess1} className='img-fluid col-4 position-absolute shadowpositiontop d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
+                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px', boxShadow: '1px 8px 20px' }}>
+                    <div className='row d-flex justify-content-center'>
+                      <div className='col-4'>
+                        <div className='card p-3 rounded-circle roundedcard1'>
+                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-3'>
+                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-3 '>
+                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionright d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
+                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px' }}>
+                    <div className='row d-flex justify-content-center'>
+                      <div className='col-4'>
+                        <div className='card p-3 rounded-circle roundedcard1'>
+                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-3'>
+                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
-          <div className='row d-flex d-sm-flex d-md-none d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
-            <div className='col-12 mb-5 d-flex justify-content-center'>
-              <img src={processmob} className='img-fluid' alt='processmob' />
+          <div className='row d-flex d-sm-flex d-md-flex d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
+            <div className='col-12 mb-5'>
+              <div className='row d-flex justify-content-center gap-4 relative'>
+                <div className='col-10 col-lg-3 ps-4'>
+                  <img src={leftc} className='img-fluid position-absolute left' alt='left' />
+                  <div className="card mt-5 mt-lg-0 mobcard ">
+                    <div className='row d-flex justify-content-center'>
+                      <div className='col-4'>
+                        <div className='card p-3 mt-3 rounded-circle roundedcard1'>
+                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-3'>
+                        <p className='mt-lg-3 text-center '><b>Idea to product</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br />experienced, of <br />experienced</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-10 col-lg-3 pe-3'>
+                  <img src={rightc} className='img-fluid position-absolute right' alt='left' />
+                  <div className="card mt-4 mt-lg-0 mobcard ">
+                    <div className='row d-flex justify-content-center  gap-4 relative'>
+                      <div className='col-4'>
+                        <div className='card p-2 rounded-circle roundedcard1 mt-3' >
+                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-3'>
+                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to life <br /> with guidance<br /> of experienced,<br />
+                          of experienced</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-10 col-lg-3 ps-4'>
+                  <img src={leftc} className='img-fluid position-absolute left2' alt='left' />
+                  <div className="card mt-4 mt-lg-0 mobcard">
+                    <div className='row d-flex justify-content-center gap-4 relative'>
+                      <div className='col-4'>
+                        <div className='card p-2 rounded-circle roundedcard1 mt-3'>
+                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
+                        </div>
+                      </div>
+                    </div>
+                    <div className='row'>
+                      <div className='col p-3'>
+                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
+                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br /> experienced,<br /> of experienced</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -482,7 +594,7 @@ function Home() {
         </div>
       </div >
       {/*cards block*/}
-      < div className='container pt-lg-5 mb-lg-5 pb-lg-5' >
+      < div className='container pt-5' >
         <div className='row pt-5 d-none d-sm-none d-md-none d-lg-block'>
           <div className='col'>
             <div className='row d-flex justify-content-center '>
@@ -924,6 +1036,7 @@ function Home() {
                 <div className='col-12 col-md-10 col-lg-10'>
                   <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p>
                 </div>
+                <img src={success} className='img-fluid d-none d-sm-none d-md-block d-md-block' alt='success' />
               </div>
             </div>
           </div>
