@@ -148,20 +148,37 @@ function Aboutus() {
           </div>
         </div>
         <div className='container'>
-          <div className='row mx-lg-5 d-flex gap-3'>
-            <div className='col-3 col-lg-2'>
+          <div className='row gap-5 d-none d-sm-flex d-md-block d-lg-flex'>
+            <div className='col '>
               <img src={kennovate} className='img-fluid' alt='kennovate' />
             </div>
-            <div className='col-3 col-lg-2'>
+            <div className='col '>
               <img src={transo} className='img-fluid' alt='transo' />
             </div>
-            <div className='col-4 col-lg-2'>
+            <div className='col '>
               <img src={seminar} className='img-fluid' alt='seminar' />
             </div>
-            <div className='col-3 col-lg-2'>
+            <div className='col '>
               <img src={turbo} className='img-fluid' alt='turbo' />
             </div>
-            <div className='col-3 col-lg-2'>
+            <div className='col '>
+              <img src={doqfy} className='img-fluid' alt='doqfy' />
+            </div>
+          </div>
+          <div className='row d-flex d-flex d-sm-flex d-md-none d-lg-none'>
+            <div className='col-3 '>
+              <img src={kennovate} className='img-fluid' alt='kennovate' />
+            </div>
+            <div className='col-3 '>
+              <img src={transo} className='img-fluid' alt='transo' />
+            </div>
+            <div className='col-3 '>
+              <img src={seminar} className='img-fluid' alt='seminar' />
+            </div>
+            <div className='col-3 '>
+              <img src={turbo} className='img-fluid' alt='turbo' />
+            </div>
+            <div className='col-3 '>
               <img src={doqfy} className='img-fluid' alt='doqfy' />
             </div>
           </div>
@@ -194,6 +211,7 @@ function Aboutus() {
                     <div className='col-12 col-lg-3'>
                       <img src={t2clogo} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='logo' width='70%' />
                       <img src={t2clogo} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='logo' width='30%' />
+                      <hr className='d-block d-sm-block d-md-none d-lg-none'/>
                     </div>
                     <div className='col-12 col-lg-8'>
                       <div className='row'>
@@ -211,11 +229,11 @@ function Aboutus() {
             </div>
           </div>
           <div className='row my-lg-5 p-3 pb-lg-5'>
-            <div className='col-12 mt-5 col-lg-3'>
-              <div class="card w-100">
+            <div className='col-12 mt-5 col-lg-3 d-flex'>
+              <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5 mt-lg-3'>
+                    <div className='col-5 mt-lg-3 '>
                       <h3 class="card-title"><b>Alt Dash</b></h3>
                     </div>
                     <div className='col-7 d-flex justify-content-end'>
@@ -229,8 +247,8 @@ function Aboutus() {
                 </div>
               </div>
             </div>
-            <div className='col-12 mt-5 col-lg-3'>
-              <div class="card w-100">
+            <div className='col-12 mt-5 col-lg-3 d-flex'>
+              <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
                     <div className='col-5 mt-lg-3'>
@@ -247,8 +265,8 @@ function Aboutus() {
                 </div>
               </div>
             </div>
-            <div className='col-12 mt-5  col-lg-3'>
-              <div class="card w-100">
+            <div className='col-12 mt-5  col-lg-3 d-flex'>
+              <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
                     <div className='col-5 mt-lg-2'>
@@ -265,8 +283,8 @@ function Aboutus() {
                 </div>
               </div>
             </div>
-            <div className='col-12 mt-5 col-lg-3'>
-              <div class="card w-100">
+            <div className='col-12 mt-5 col-lg-3 d-flex'>
+              <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
                     <div className='col-5 mt-lg-3'>

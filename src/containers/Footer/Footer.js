@@ -16,15 +16,15 @@ function Footer() {
                         <div className='col-6 col-lg-4 col-md-4'>
                             <p className=''><HiOutlineMinus />Get in Touch</p>
                             <p className='h2 fw-bolder'>Take filght with T²C</p>
-                            <div className='d-flex d-sm-flex d-md-none d-lg-none'>
+                            <div className='d-flex d-sm-flex d-md-flex d-lg-none'>
                                 <button className='btn btn-dark rounded-5 px-3 '>Talk to us  <img src={arrow2} alt='arrow2' width='12%' /></button>
                             </div>
                         </div>
                         <div className='col-4  d-flex justify-content-center'>
-                            <img src={rocket} className=' footerimgposition d-none d-sm-none d-md-flex d-lg-flex' alt='rocket' width='200px' />
-                            <img src={rocketmob} className=' footerimgposition d-flex d-sm-flex d-md-none d-lg-none mt-4' alt='rocket' width='125px' />
+                            <img src={rocket} className=' footerimgposition d-none d-sm-none d-md-none d-lg-flex' alt='rocket' width='200px' />
+                            <img src={rocketmob} className=' footerimgposition d-flex d-sm-flex d-md-flex d-lg-none mt-4' alt='rocket' width='125px' />
                         </div>
-                        <div className='col-4 d-none d-sm-none d-md-flex d-lg-flex align-items-center justify-content-end '>
+                        <div className='col-4 d-none d-sm-none d-md-none d-lg-flex align-items-center justify-content-end '>
                             <button className='btn btn-dark rounded-5 px-4 py-2'>Talk to us  <img src={arrow2} alt='arrow2' width='12%' /></button>
                         </div>
                     </div>
@@ -126,10 +126,12 @@ function Footer() {
                     <div className='col-6 d-flex align-items-center'>
                         <p className='fw-light'>© {new Date().getFullYear()} T²C Inc.</p>
                     </div>
-                    <div className='col-6 d-flex justify-content-end gap-3'>
-                        <div><BiLogoFacebookSquare size='50px' /></div>
-                        <div> <FaInstagramSquare size='45px' /></div>
-                        <div><BsLinkedin size='43px' /></div>      
+                    <div className='col-6 d-flex justify-content-end'>
+                        <div className='row d-flex'>
+                            <div className='col-3 d-flex my-auto'><BiLogoFacebookSquare size='90px' /></div>
+                            <div className='col-3 d-flex my-auto'> <FaInstagramSquare size='45px' /></div>
+                            <div className='col-3 d-flex my-auto'><BsLinkedin size='43px' /></div>
+                        </div>
                     </div>
                 </div>
             </div>

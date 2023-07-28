@@ -67,25 +67,27 @@ import development from '../../assests/Homepage/development.png'
 import ecommerce from '../../assests/Homepage/ecommerce.png'
 import team from '../../assests/Homepage/team.png'
 import ux from '../../assests/Homepage/ux.png'
-
+import realworld from '../../assests/Homepage/realworld.png'
+import processmob from '../../assests/Homepage/processmob.png'
+import '../../../src/index.css'
 
 function Home() {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(1);
   const [text, setText] = useState('');
   const [color, setcolor] = useState(1)
 
   const array = [
     { id: 1, img: u2, text: 'We offer innovative web and mobile app development services to boost your online presence and drive growth. Our experienced team creates custom solutions tailored to your business needs, delivering seamless user experiences for lasting success.', icons: [{ icon: php }, { icon: dotnet }, { icon: phython }, { icon: js }] },
-    { id: 2, img: cloud2, text: 'We offer valuable resources, expert insights, and practical guidance for navigating DevOps and cloud computing. Discover best practices, optimize workflows, and enhance infrastructure for maximum efficiency, scalability, and performance.', icons: [{ icon: aws }, { icon: cloud }, { icon: pc }]},
-    { id: 3, img: ux, text: 'A user-centric approach is at the heart of every interaction design and experience we create. Our process starts with consumer research and ends with serving customer delight.',icons: [{ icon: figma }, { icon: sketch }, { icon: smiley }, { icon: u }] },
+    { id: 2, img: cloud2, text: 'We offer valuable resources, expert insights, and practical guidance for navigating DevOps and cloud computing. Discover best practices, optimize workflows, and enhance infrastructure for maximum efficiency, scalability, and performance.', icons: [{ icon: aws }, { icon: cloud }, { icon: pc }] },
+    { id: 3, img: ux, text: 'A user-centric approach is at the heart of every interaction design and experience we create. Our process starts with consumer research and ends with serving customer delight.', icons: [{ icon: figma }, { icon: sketch }, { icon: smiley }, { icon: u }] },
     { id: 4, img: ecommerce, text: 'Our expert team creates tailored ecommerce platforms with innovative design, robust functionality, and seamless user experiences. T2C provides industry insights, strategic approaches, and result-driven development for your online business to thrive in the competitive market.', icons: [{ icon: adobe }, { icon: b9 }, { icon: shopify }, { icon: woo }] },
     { id: 5, img: development, text: 'We craft customized CRM systems to drive business growth. Our expert team stream lines sales, marketing, and customer support processes with tailored solutions. Experience innovative technology, industry expertise, & a customer-centric approach with T2C for maximum business potential.', icons: [{ icon: sales }, { icon: tripple }, { icon: wing }] },
     { id: 6, img: dev, text: 'Our team crafts bespoke software solutions to empower your business growth. With T2C, benefit from our innovative approach, cutting-edge technology, and commitment to excellence in transforming your ideas into powerful applications.', icons: [] },
     { id: 7, img: testing, text: 'We provide top-notch QA testing services to ensure your software meets industry standards. Our seasoned team uses advanced methodologies and tools to identify and resolve issues, ensuring flawless and reliable applications for your users.', icons: [] },
-    { id: 8, img: analytics, text: 'Unleash your datas potential with our skilled team. We design, implement, & optimize custom database systems, providing actionable insights for informed decision-making. we offers robust data management, advanced analytics &cutting -edge technology to fuel business growth.', icons: [{ icon: solution }, { icon: plugin }, { icon: book }, { icon: leaf },{icon:mysql}] },
-    { id: 9, img: team, text: 'Elevate your business with our customized tech powerhouse. Our skilled team collaborates seamlessly, delivering high-quality software solutions tailored to your unique needs. With T2C, benefit from flexible expertise and a dedicated team focused on accelerating your business growth.',icons: [] },
-    { id: 10, img: app, text: 'Revitalize your digital assets with T2C. We assess, re-engineer, and optimize legacy applications for improved efficiency, security, and scalability. Experience the power of ai-edge technology and a future-focused approach to transform your applications into agile, high-performing assets.',icons: [] },
-    { id: 11, img: ai, text: 'Experience the convergence of cutting-edge AI technology & deep industry expertise. Our team collaborates to create intelligent, high-impact solutions that elevate your business processes and fuel growth. Harness bespoke AI-driven solutions to streamline operations and optimize your business.',icons: [] },
+    { id: 8, img: analytics, text: 'Unleash your datas potential with our skilled team. We design, implement, & optimize custom database systems, providing actionable insights for informed decision-making. we offers robust data management, advanced analytics &cutting -edge technology to fuel business growth.', icons: [{ icon: solution }, { icon: plugin }, { icon: book }, { icon: leaf }, { icon: mysql }] },
+    { id: 9, img: team, text: 'Elevate your business with our customized tech powerhouse. Our skilled team collaborates seamlessly, delivering high-quality software solutions tailored to your unique needs. With T2C, benefit from flexible expertise and a dedicated team focused on accelerating your business growth.', icons: [] },
+    { id: 10, img: app, text: 'Revitalize your digital assets with T2C. We assess, re-engineer, and optimize legacy applications for improved efficiency, security, and scalability. Experience the power of ai-edge technology and a future-focused approach to transform your applications into agile, high-performing assets.', icons: [] },
+    { id: 11, img: ai, text: 'Experience the convergence of cutting-edge AI technology & deep industry expertise. Our team collaborates to create intelligent, high-impact solutions that elevate your business processes and fuel growth. Harness bespoke AI-driven solutions to streamline operations and optimize your business.', icons: [] },
   ]
 
   const options = {
@@ -113,13 +115,13 @@ function Home() {
                   <div className='container'>
                     <div className='row position-absolute d-none d-sm-none d-md-block d-lg-block text-position'>
                       <div className='col'>
-                          <p className=' text-dark fw-bold startdayfont'>Start Big from <br /><span className='homeheadcolor'>Day One.</span>
-                          </p>
-                          <p className='fs-6'>
-                            We work with you in the trenches as your CTO,<br />
-                            business strategy, design thinking.
-                          </p>
-                          <button className='btn btn-dark rounded-5 mt-lg-4'>Learn More<FiArrowUpRight size='30' /></button>
+                        <p className='text-dark fw-bold startdayfont'>Start Big from <br /><span className='homeheadcolor'>Day One.</span>
+                        </p>
+                        <p className='fs-6'>
+                          We work with you in the trenches as your CTO,<br />
+                          business strategy, design thinking.
+                        </p>
+                        <button className='btn btn-dark rounded-5 mt-lg-4'>Learn More<FiArrowUpRight size='30' /></button>
                       </div>
                     </div>
                   </div>
@@ -217,21 +219,21 @@ function Home() {
 
 
       {/*Our Process*/}
-      <div className='bgcolor mt-5 pb-lg-5'>
-        <div className='container pb-lg-5'>
-          <div className='row py-5'>
+      <div className='bgcolor mt-5 pb-lg-5 pb-md-5 mb-lg-5 mb-md-5 position-relative'>
+        <div className='container pb-lg-5 mb-lg-5 pb-md-5 mb-md-5'>
+          <div className='row pt-5'>
             <div className='col-12 col-md-6 col-lg-6'>
-              <p className=' text-light fw-light'><HiOutlineMinus />How we Work</p>
+              <p className=' text-light fw-light m-0'><HiOutlineMinus />How we Work</p>
               <p className='fs-1 text-light textcolor d-none d-sm-none d-md-block d-lg-block'><b>Our Process</b></p>
-              <p className='h2 text-light textcolormob d-block d-sm-block d-md-none d-lg-none'><b>Our Process</b></p>
+              <p className='h2 text-light textcolormob4 d-block d-sm-block d-md-none d-lg-none'><b>Our Process</b></p>
             </div>
             <div className='col-12 col-md-6 col-lg-6'>
               <div className='row'>
-                <div className='col-2 p-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
-                  <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid' }}></div>
+                <div className='col-2 p-2 d-none d-sm-none d-md-none d-lg-flex justify-content-end'>
+                  <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid', height: '40px' }}></div>
                 </div>
                 <div className='col-12 col-md-10 col-lg-10 mt-2 '>
-                  <p className='text-light fw-light'>Bring your idea to life with the guidance of experienced,
+                  <p className='text-light fw-light m-0'>Bring your idea to life with the guidance of experienced,
                     from inception to a minimum viable product. </p>
                 </div>
               </div>
@@ -239,155 +241,43 @@ function Home() {
           </div>
 
           {/*cards overlap block*/}
-          <div className='row d-none d-sm-none d-md-none d-lg-flex justify-content-center p-lg-5 p-md-5 mb-lg-5'>
-            <div className='col-12 position-absolute'>
-              <img src={process} className='img-fluid' alt='process'/>
-              {/* <div className='row d-flex justify-content-center gap-5 relative'>
-                <div className='col-3 '>
-                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionleft d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0  border-0  p-4 circle" style={{ width: '100%', height: '320px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 roundedcard1'>
-                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-2'>
-                        <p className='mt-lg-3 text-center'><b>Idea to product</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-3 '>
-                  <img src={ourprocess1} className='img-fluid col-4 position-absolute shadowpositiontop d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px', boxShadow: '1px 8px 20px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 rounded-circle roundedcard1'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-3 '>
-                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionright d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 rounded-circle roundedcard1'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+          <div className='row d-none d-sm-none d-md-flex d-lg-flex justify-content-center '>
+            <div className='col-10 position-absolute'>
+              <img src={process} className='col-12 bubbles' alt='process' />
             </div>
           </div>
-          <div className='row d-flex d-sm-flex d-md-flex d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
-            <div className='col-12 mb-5'>
-              <div className='row d-flex justify-content-center gap-4 relative'>
-                <div className='col-10 col-lg-3 ps-4'>
-                  <img src={leftc} className='img-fluid position-absolute left' alt='left' />
-                  <div className="card mt-5 mt-lg-0 mobcard ">
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 mt-3 rounded-circle roundedcard1'>
-                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center '><b>Idea to product</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br />experienced, of <br />experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-10 col-lg-3 pe-3'>
-                  <img src={rightc} className='img-fluid position-absolute right' alt='left' />
-                  <div className="card mt-4 mt-lg-0 mobcard ">
-                    <div className='row d-flex justify-content-center  gap-4 relative'>
-                      <div className='col-4'>
-                        <div className='card p-2 rounded-circle roundedcard1 mt-3' >
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life <br /> with guidance<br /> of experienced,<br />
-                          of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-10 col-lg-3 ps-4'>
-                  <img src={leftc} className='img-fluid position-absolute left2' alt='left' />
-                  <div className="card mt-4 mt-lg-0 mobcard">
-                    <div className='row d-flex justify-content-center gap-4 relative'>
-                      <div className='col-4'>
-                        <div className='card p-2 rounded-circle roundedcard1 mt-3'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br /> experienced,<br /> of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className='row d-flex d-sm-flex d-md-none d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
+            <div className='col-12 mb-5 d-flex justify-content-center'>
+              <img src={processmob} className='img-fluid' alt='processmob' />
             </div>
           </div>
         </div>
       </div>
 
       {/*Expertise*/}
-      <div className='container mt-lg-5 pt-lg-5'>
-        <div className='row pt-lg-5 mt-lg-5'>
-          <div className='col-12 col-md-6 col-lg-6'>
-            <p className='fw-light mt-lg-5'><HiOutlineMinus />What we do</p>
-            <p className='h2 text-color d-none d-sm-none d-md-block d-lg-block'><b>Expertise</b></p>
-            <p className='h2 text-colormob d-block d-sm-block d-md-none d-lg-none'><b>Expertise</b></p>
-          </div>
-          <div className='col-12 col-md-6 col-lg-6 '>
-            <div className='row'>
-              <div className='col-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
-                <div className="vr mt-lg-5" style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid' }}></div>
-              </div>
-              <div className='col-12 col-md-10 col-lg-10'>
-                <p className='fw-light mt-lg-5'>Bring your idea to life with the guidance of experienced,
-                  from inception to a minimum viable product. </p>
+      <div className='mt-lg-3 mt-md-5 pt-lg-3 pt-md-5'>
+        <div className='container mt-lg-5 mt-md-5 pt-md-5 pt-lg-5 py-5'>
+          <div className='row pt-lg-5 mt-lg-5'>
+            <div className='col-12 col-md-6 col-lg-6'>
+              <p className='fw-light m-0'><HiOutlineMinus />What we do</p>
+              <p className='h2 text-color d-none d-sm-none d-md-block d-lg-block'><b>Expertise</b></p>
+              <p className='h2 text-colormob d-block d-sm-block d-md-none d-lg-none'><b>Expertise</b></p>
+            </div>
+            <div className='col-12 col-md-6 col-lg-6 '>
+              <div className='row'>
+                <div className='col-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
+                  <div className="vr" style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid', height: '40px' }}></div>
+                </div>
+                <div className='col-12 col-md-10 col-lg-10'>
+                  <p className='fw-light '>Bring your idea to life with the guidance of experienced,
+                    from inception to a minimum viable product. </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className='container mt-lg-5'>
+      <div className='container'>
         <div className='row d-block d-sm-block d-md-block d-lg-none'>
           <div className='col-12'>
             <div className='card rounded-0 border-0' style={{ backgroundColor: '#EDFCFF', boxShadow: '2px 2px 10px -6px black' }}>
@@ -414,7 +304,7 @@ function Home() {
 
           </div>
         </div>
-        <div className='row '>
+        <div className='row p-4'>
           <div className='col-4 p-0 d-none d-sm-none d-md-none d-lg-block'>
             <div className={number === 1 ? 'px-lg-4 px-md-4 py-lg-3 py-md-2 buttonbackgroundradiusleft' : 'px-lg-4 px-md-4 py-lg-3 py-md-2'}>
               <div className={number === 1 ? 'row border border-0 rounded-5 p-3 buttonColor' : 'row border border-2 rounded-5 p-3 buttonColorhover'} onClick={() => { setNumber(1) }}>
@@ -488,11 +378,11 @@ function Home() {
                       <br /><br />
                       <p className=''>{text}</p>
                       <div className='row'>
-                        {icons.map((a)=>{
-                          const {icon}=a;
-                          return(
+                        {icons.map((a) => {
+                          const { icon } = a;
+                          return (
                             <div className='col-2'>
-                              <img src={icon} className='img-fluid' alt='php'/>
+                              <img src={icon} className='img-fluid' alt='php' />
                             </div>
                           )
                         })}
@@ -572,45 +462,45 @@ function Home() {
       </div >
       <br />
       {/*Explore Our Projects block*/}
-      < div className='container mt-lg-5' >
+      < div className='container mt-lg-4' >
         <div className='row py-5 mb-5'>
           <div className='col-12 col-md-6 col-lg-6'>
-            <p className='fw-light'><HiOutlineMinus />Explore Our Projects</p>
+            <p className='fw-light m-0'><HiOutlineMinus />Explore Our Projects</p>
             <p className='h2 text-color3 d-none d-sm-none d-md-block d-lg-block'><b>Case Studies</b></p>
             <p className='h2 text-color3mob d-block d-sm-block d-md-none d-lg-none'><b>Case Studies</b></p>
           </div>
           <div className='col-12 col-md-6 col-lg-6'>
             <div className='row'>
               <div className='col-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
-                <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid' }}></div>
+                <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid', height: '40px' }}></div>
               </div>
               <div className='col-12 col-md-10 col-lg-10'>
-                <p className='fw-light'>Explore how services and solutions delivered by our team help businesses grow and succeed. </p>
+                <p className='fw-light'>Explore how services and solutions delivered by our team help businesses grow and succeed.  </p>
               </div>
             </div>
           </div>
         </div>
       </div >
       {/*cards block*/}
-      < div className='container pt-5' >
+      < div className='container pt-lg-5 mb-lg-5 pb-lg-5' >
         <div className='row pt-5 d-none d-sm-none d-md-none d-lg-block'>
           <div className='col'>
-            <div className='row'>
+            <div className='row d-flex justify-content-center '>
               <div className='col-12 col-lg-4 col-md-4'>
                 <div className='card cardhover'>
                   <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                   <div className='row px-4 pt-5 mt-5 '>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>$30K</b></p>
-                      <p>MVP cost</p>
+                      <p className='cardsubhead'><b>$30K</b></p>
+                      <p className='cardsubhead'>MVP cost</p>
                     </div>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>5 people</b></p>
-                      <p>to MVP</p>
+                      <p className='cardsubhead'><b>5 people</b></p>
+                      <p className='cardsubhead'>to MVP</p>
                     </div>
                     <div className='col'>
-                      <p><b>8 weeks</b></p>
-                      <p>product team</p>
+                      <p className='cardsubhead'><b>8 weeks</b></p>
+                      <p className='cardsubhead'>product team</p>
                     </div>
                   </div>
                   <div className='row px-4 py-4'>
@@ -631,16 +521,16 @@ function Home() {
                   <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                   <div className='row px-4 pt-5 mt-5 '>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>$30K</b></p>
-                      <p>MVP cost</p>
+                      <p className='cardsubhead'><b>$30K</b></p>
+                      <p className='cardsubhead'>MVP cost</p>
                     </div>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>5 people</b></p>
-                      <p>to MVP</p>
+                      <p className='cardsubhead'><b>5 people</b></p>
+                      <p className='cardsubhead'>to MVP</p>
                     </div>
                     <div className='col'>
-                      <p><b>8 weeks</b></p>
-                      <p>product team</p>
+                      <p className='cardsubhead'><b>8 weeks</b></p>
+                      <p className='cardsubhead'>product team</p>
                     </div>
                   </div>
                   <div className='row px-4 py-4'>
@@ -665,16 +555,16 @@ function Home() {
                   </div>
                   <div className='row px-4 pt-5 mt-5 '>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>$30K</b></p>
-                      <p>MVP cost</p>
+                      <p className='cardsubhead'><b>$30K</b></p>
+                      <p className='cardsubhead'>MVP cost</p>
                     </div>
                     <div className='col border-1 border-end border-dark'>
-                      <p><b>5 people</b></p>
-                      <p>to MVP</p>
+                      <p className='cardsubhead'><b>5 people</b></p>
+                      <p className='cardsubhead'>to MVP</p>
                     </div>
                     <div className='col'>
-                      <p><b>8 weeks</b></p>
-                      <p>product team</p>
+                      <p className='cardsubhead'><b>8 weeks</b></p>
+                      <p className='cardsubhead'>product team</p>
                     </div>
                   </div>
                   <div className='row px-4 py-4'>
@@ -703,16 +593,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -737,16 +627,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -771,16 +661,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -812,16 +702,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -846,16 +736,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -880,16 +770,16 @@ function Home() {
                       <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>$30K</b></p>
-                          <p>MVP cost</p>
+                          <p className='cardsubhead'><b>$30K</b></p>
+                          <p className='cardsubhead'>MVP cost</p>
                         </div>
                         <div className='col border-1 border-end border-dark'>
-                          <p><b>5 people</b></p>
-                          <p>to MVP</p>
+                          <p className='cardsubhead'><b>5 people</b></p>
+                          <p className='cardsubhead'>to MVP</p>
                         </div>
                         <div className='col'>
-                          <p><b>8 weeks</b></p>
-                          <p>product team</p>
+                          <p className='cardsubhead'><b>8 weeks</b></p>
+                          <p className='cardsubhead'>product team</p>
                         </div>
                       </div>
                       <div className='row px-4 py-4'>
@@ -915,11 +805,75 @@ function Home() {
 
 
       {/*Real World Success block*/}
-      < div className='container-fluid bgcolor mt-lg-5' >
+      < div className='container-fluid bgcolor mt-lg-5 d-block d-sm-block d-md-block d-lg-none' >
         <div className='container mt-lg-5'>
           <div className='row py-5'>
             <div className='col-12 col-md-6 col-lg-6 mt-lg-5'>
-              <p className=' text-light fw-light'><HiOutlineMinus />Giving Push to your Growth</p>
+              <p className=' text-light fw-light m-0'><HiOutlineMinus />Giving Push to your Growth</p>
+              <p className='h2 text-light '><b><span className='textcolor'>Real World</span> Success</b></p>
+              <div className='col-12 col-md-10 col-lg-10'>
+                  <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p>
+                </div>
+
+              {/*cards*/}
+              <div className='row mt-lg-5 mt-3'>
+                <div className='col-6 col-lg-4'>
+                  <div className="card w-100 card-color" style={{ backgroundColor: 'rgb(103 103 103)' }}>
+                    <div className="card-body">
+                      <p className="h1 card-title text-center text-light "><b>25+</b></p>
+                      <p className="card-text text-center text-light">Products<br /> Delivered</p>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-6 col-lg-4'>
+                  <div className="card w-100 card-color " style={{ backgroundColor: 'rgb(103 103 103)' }}>
+                    <div className="card-body ">
+                      <p className="h1 card-title text-center text-light"><b>40+</b></p>
+                      <p className="card-text text-center text-light">Wizards at <br />Work</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='row mt-lg-5 mt-5'>
+                <div className='col-6 col-lg-4'>
+                  <div className="card w-100 h-100  card-color " style={{ backgroundColor: 'rgb(103 103 103)' }}>
+                    <div className="card-body ">
+                      <p className="h1 card-title text-center text-light"><b>30+</b></p>
+                      <p className="card-text text-center text-light">Technologies Deployed</p>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-6 col-lg-4'>
+                  <div className="card w-100 card-color " style={{ backgroundColor: 'rgb(103 103 103)' }}>
+                    <div className="card-body ">
+                      <p className="h1 card-title text-center text-light" ><b>4+</b></p>
+                      <p className="card-text text-center text-light">Countries & <br />Growing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/*paragraph*/}
+            <div className='col-12 col-md-6 col-lg-6 mt-lg-5 '>
+              <div className='row'>
+                <div className='col-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
+                  <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid' }}></div>
+                </div>
+                <div className='col-12 col-md-10 col-lg-10'>
+                  {/* <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p> */}
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src={map} className='img-fluid  d-block d-sm-block d-md-block d-lg-none ' alt='map' />
+        </div>
+      </div >
+      < div className='container-fluid  position-absolute d-none d-sm-none d-md-none d-lg-block' >
+        <div className='container '>
+          <div className='row py-5'>
+            <div className='col-12 col-md-6 col-lg-6 mt-lg-5'>
+              <p className=' text-light fw-light m-0'><HiOutlineMinus />Giving Push to your Growth</p>
               <p className='h2 text-light '><b><span className='textcolor'>Real World</span> Success</b></p>
 
               {/*cards*/}
@@ -967,17 +921,23 @@ function Home() {
                 <div className='col-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
                   <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid' }}></div>
                 </div>
-                <div className='col-12 col-md-10 col-lg-10 mt-5'>
+                <div className='col-12 col-md-10 col-lg-10'>
                   <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p>
                 </div>
-                <img src={success} className='img-fluid d-none d-sm-none d-md-block d-md-block' alt='success' />
               </div>
             </div>
           </div>
-          <img src={map} className='img-fluid image d-none d-sm-none d-md-block d-lg-block ' alt='map' width='50%' />
           <img src={map} className='img-fluid  d-block d-sm-block d-md-none d-lg-none ' alt='map' />
         </div>
       </div >
+      <div className='container-fluid'>
+        <div className='row'>
+          <div className='col p-0'>
+            <img src={realworld} className='img-fluid d-none d-sm-none d-md-none d-lg-block' alt='realworld' />
+
+          </div>
+        </div>
+      </div>
       <div className='container'>
         <div className='row'>
           <div className='col-12 col-lg-6 mt-5'>
@@ -988,47 +948,52 @@ function Home() {
 
           {/*tab pannel */}
           <div className='col-12 col-lg-6  mt-5'>
-            <ul className="nav nav-tabs mb-3 d-flex justify-content-lg-end mt-3" id="ex1" role="tablist">
-              <li className="nav-item" role="presentation">
-                <a
-                  className={color === 1 ? "nav-link active tabs" : "nav-link   border-0"}
-                  id="ex1-tab-1"
-                  data-bs-toggle="tab"
-                  href="#ex1-tabs-1"
-                  role="tab"
-                  aria-controls="ex1-tabs-1"
-                  aria-selected="true"
-                  onClick={() => { setcolor(1) }}
-                >Whats New</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a
-                  className={color === 2 ? "nav-link active  tabs" : "nav-link   border-0"}
-                  id="ex1-tab-2"
-                  data-bs-toggle="tab"
-                  href="#ex1-tabs-2"
-                  role="tab"
-                  aria-controls="ex1-tabs-2"
-                  aria-selected="false"
-                  onClick={() => { setcolor(2) }}
-                >Security</a>
-              </li>
-              <li className="nav-item" role="presentation">
-                <a
-                  className={color === 3 ? "nav-link active tabs" : "nav-link border-0"}
-                  id="ex1-tab-3"
-                  data-bs-toggle="tab"
-                  href="#ex1-tabs-3"
-                  role="tab"
-                  aria-controls="ex1-tabs-3"
-                  aria-selected="false"
-                  onClick={() => { setcolor(3) }}
-                >News</a>
-              </li>
-            </ul>
+            <div className='row d-flex justify-content-end'>
+              <div className='col '>
+                <ul className="nav nav-tabs mb-3 d-flex justify-content-lg-end " id="ex1" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <a
+                      className={color === 1 ? "nav-link active tabs" : "nav-link text-dark  border-0"}
+                      id="ex1-tab-1"
+                      data-bs-toggle="tab"
+                      href="#ex1-tabs-1"
+                      role="tab"
+                      aria-controls="ex1-tabs-1"
+                      aria-selected="true"
+                      onClick={() => { setcolor(1) }}
+                    >Whats New</a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a
+                      className={color === 2 ? "nav-link active  tabs" : "nav-link  text-dark border-0"}
+                      id="ex1-tab-2"
+                      data-bs-toggle="tab"
+                      href="#ex1-tabs-2"
+                      role="tab"
+                      aria-controls="ex1-tabs-2"
+                      aria-selected="false"
+                      onClick={() => { setcolor(2) }}
+                    >Security</a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a
+                      className={color === 3 ? "nav-link active tabs" : "nav-link text-dark border-0"}
+                      id="ex1-tab-3"
+                      data-bs-toggle="tab"
+                      href="#ex1-tabs-3"
+                      role="tab"
+                      aria-controls="ex1-tabs-3"
+                      aria-selected="false"
+                      onClick={() => { setcolor(3) }}
+                    >News</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
-        <div className="tab-content mt-5" id="ex1-content">
+        <div className="tab-content mt-3" id="ex1-content">
           <div
             class="tab-pane fade show active"
             id="ex1-tabs-1"
@@ -1115,18 +1080,17 @@ function Home() {
 
       {/* Want to build the future with us? paragraph */}
       <div className='container mt-5'>
-        <div className='row'>
-          <div className='col-12 col-lg-6 mt-lg-5'>
+        <div className='row '>
+          <div className='col-12 col-lg-6 mt-lg-5 pe-lg-4'>
             <img src={future} className='img-fluid' alt='future' />
           </div>
-          <div className='col-12 col-lg-6  mt-5'>
+          <div className='col-12 col-lg-6  mt-5 ps-lg-4'>
             <p><HiOutlineMinus />Join T²C and make an impact!</p>
             <p className='h3'>
-              Want to build the future with us?
+              Want to build the <br />future with us?
             </p>
-            <br />
-            <p><b>This is an opportunity for students who are eager to dominate the tech world.</b><br />
-              If you are looking forward to expanding upon your skill sets, T²C is the place for you to thrive. Whether you are a coding whiz, a web developer or just starting out, we've got you covered. Get trained by experts and work on live projects right from Day 1 - gearing you to build the next-generation of products! Join hands with a tech-savvy clan who’s as passionate as you are!</p>
+            <p><b>This is an opportunity for students who are eager to dominate the tech world.</b></p>
+            <p>If you are looking forward to expanding upon your skill sets, T²C is the place for you to thrive. Whether you are a coding whiz, a web developer or just starting out, we've got you covered. Get trained by experts and work on live projects right from Day 1 - gearing you to build the next-generation of products! Join hands with a tech-savvy clan who’s as passionate as you are!</p>
             <br />
             <button className='btn btn-dark rounded-5 px-3 '>Join us  <img src={arrow2} alt='arrow2' width='12%' /></button>
           </div>
@@ -1135,7 +1099,7 @@ function Home() {
 
       {/*footer */}
       <div className='container-fluid mt-lg-5 mt-3 pt-lg-5'>
-        <div className='row'>
+        <div className='row mt-lg-5'>
           <div className='col p-0'>
             <Footer />
 

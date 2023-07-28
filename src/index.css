@@ -15,61 +15,77 @@ code {
 
 /*media queries*/
 @media only screen and (min-width: 600px) {
+
   /* navbar */
-  .navbar-font{
-    font-size:20px;
+  .navbar-font {
+    font-size: 20px;
   }
+
   /* home page */
-  .startdayfont{
+  .startdayfont {
     font-size: 50px;
-    
+
   }
 }
-.text-color{
+
+.text-color {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 139px;
 }
-.text-colormob{
+
+.text-colormob {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 103px;
 }
-.text-colormob2{
+
+.text-colormob2 {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 106px;
 }
-.text-color3{
+
+.text-color3 {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 187px;
 }
-.text-color3mob{
+
+.text-color3mob {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
-  width: 141px;
+  width: 145px;
 }
-.text-color4{
+
+.text-color4 {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 184px;
 }
-.text-color5{
+
+.text-color5 {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
   width: 248px;
 }
 
-.textcolor{
+.textcolor {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
   width: 230px;
 }
-.textcolormob{
+
+.textcolormob {
   box-shadow: inset 0px -13px 0px 0px rgba(0, 115, 136, 1);
   width: 134px;
 }
-.textcolor2{
+.textcolormob4 {
+  box-shadow: inset 0px -13px 0px 0px rgba(0, 115, 136, 1);
+  width: 139px;
+}
+.textcolor2 {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
   width: 105px;
 }
-.textcolor3mob{
+
+.textcolor3mob {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
   width: 274px;
 }
+
 /*navbar*/
 .navmenucolor {
   color: #0799B8;
@@ -95,58 +111,78 @@ code {
 }
 
 /*home page*/
+.cardsubhead {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .imagetop {
+    top: 1000px;
+  }
+}
+
 .shadowpositionleft {
   left: 5%;
   top: 54%;
-  }
-  .mobcard{
-    border-radius:149px !important;
-  }
-  .shadowpositionright {
+}
+
+.mobcard {
+  border-radius: 149px !important;
+}
+
+.shadowpositionright {
   right: 5%;
-   top: 54%;
-   z-index: -1;
-  }
-  
-  .shadowpositiontop {
+  top: 54%;
+  z-index: -1;
+}
+
+.shadowpositiontop {
   right: 33%;
-   bottom:46%;
-  }
-  .left{
-    left:1%;
-    width: 48%;
-  }
-  .right{
-    left:49%;
-    top:33%;
-    width:49%;
-  
-  }
-  .left2{
-    width: 49%;
-    top:67%;
-    left:0%
-  }
-  .text-position{
-    top:150px;
-  }
-  .image{
-    margin-left:296px;
-    margin-top:-204px;
-    
-  }
-  .relative {
+  bottom: 46%;
+}
+
+.left {
+  left: 1%;
+  width: 48%;
+}
+
+.right {
+  left: 49%;
+  top: 33%;
+  width: 49%;
+
+}
+
+.left2 {
+  width: 49%;
+  top: 67%;
+  left: 0%
+}
+
+.text-position {
+  top: 150px;
+}
+
+.image {
+  margin-left: 296px;
+  margin-top: -204px;
+
+}
+
+.relative {
   position: relative;
-  }
-  
-  
-.cardhover:hover{
+}
+
+
+.cardhover:hover {
   background-color: #B9D5FE;
   cursor: pointer;
 }
-.lapimgposition{
+
+.lapimgposition {
   top: -170px;
 }
+
 .buttonColor {
   background: #EDFCFF !important;
   cursor: pointer;
@@ -168,33 +204,40 @@ code {
   border-bottom-left-radius: 50px;
   overflow: hidden;
 }
+
 .buttonbackgroundradiusright {
   background: #E8E8E8;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   overflow: hidden;
 }
-.positioncard{
-  top:144px;
-  left:86px;
-  width:33%
+
+.positioncard {
+  top: 144px;
+  left: 86px;
+  width: 33%
 }
-.positioncard2{
-  top:143px;
-  left:788px;
-  width:32%
+
+.positioncard2 {
+  top: 143px;
+  left: 788px;
+  width: 32%
 }
-.positioncardcenter{
-  top:-60px;
+
+.positioncardcenter {
+  top: -60px;
   left: 440px;
-  width:32%
+  width: 32%
 }
-.tabs{
+
+.tabs {
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
-   border-bottom: 2px solid rgba(50, 197, 224, 1) !important;
+  border-bottom: 2px solid rgba(50, 197, 224, 1) !important;
+  color: #007296 !important;
 }
+
 .roundedcard {
   /* border-radius: 50% !important; */
   /* box-shadow: 0px 0px 0px 50px rgba(0, 0, 0, 0.5); */
@@ -206,9 +249,11 @@ code {
   box-shadow: 4px 6px 22px 0px rgba(0, 0, 0, 0.5);
   border-radius: 50% !important;
 }
-.circle{
+
+.circle {
   border-radius: 50% !important;
 }
+
 .homeheadcolor {
   color: rgba(115, 190, 206, 1);
 }
@@ -239,6 +284,12 @@ code {
   background: linear-gradient(to bottom, #00BCE4 100%, #73BECE 42%);
 }
 
+/* Expertise */
+
+.Offeringscard {
+  box-shadow: 8px 7px 29px -15px;
+}
+
 /*industries*/
 .bgcolor {
   background: rgba(51, 51, 51, 1);
@@ -256,6 +307,10 @@ code {
 }
 
 /*about us*/
+.cardtopborder {
+  border-top: solid 4px #32C5E0 !important;
+}
+
 .para-color {
   background: rgba(185, 213, 254, 1);
 }
@@ -268,9 +323,11 @@ code {
 .box-color {
   background: rgba(51, 51, 51, 1);
 }
+
 .card-overlay {
   background: rgba(66, 66, 66, 0.5);
 }
+
 .textOverlap {
   position: absolute;
   background: rgba(185, 213, 254, 1);
@@ -284,29 +341,63 @@ code {
   padding: 28px;
   left: 5%;
 }
-.headalign{
+
+.headalign {
   position: absolute;
-  padding:28px;
-  left:6%;
-  top:35%
+  padding: 28px;
+  left: 6%;
+  top: 35%
 }
-.paraalign{
+
+.paraalign {
   position: absolute;
-  padding:28px;
-  left:2%;
-  top:32%
+  padding: 28px;
+  left: 2%;
+  top: 32%
 }
 
 .max {
   min-height: 58px;
 }
+
 /*contact us*/
-.headalign2{
+.headalign2 {
   position: absolute;
-  padding:28px;
-  padding-left:10%;
-  top:35%
+  padding: 28px;
+  padding-left: 10%;
+  top: 35%
 }
-.inputcolor:valid{
+
+.inputcolor:valid {
   background: #EEEEEE;
 }
+
+
+/* Home bubble resp */
+@media only screen and (max-width: 2560px) and (min-width: 1920px) {
+  .bubbles {
+    margin-top: -12.10% !important;
+  }
+}
+
+@media only screen and (max-width: 1919px) and (min-width: 1401px) {
+  .bubbles {
+    margin-top: -5.7% !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) and (min-width:1030px) {
+  .bubbles {
+    margin-top: -42px !important
+  }
+}
+@media only screen and (max-width: 1030px) and (min-width:1024px) {
+  .bubbles {
+    margin-top: -5px !important
+  }
+}
+  @media only screen and (max-width: 1023px) and (min-width:768px) {
+    .bubbles {
+      margin-top: 34px !important
+    }
+  }
