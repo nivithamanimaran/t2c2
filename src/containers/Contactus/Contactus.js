@@ -4,7 +4,8 @@ import expert from '../../assests/contactus/expert.png'
 import map from '../../assests/contactus/map.png'
 import Navbar from '../Navbar/Navbar';
 import contactusmob from '../../assests/contactus/contactusmob.png'
-
+import Footer from '../Footer/Footer';
+import mapmob from '../../assests/contactus/mapmob.png'
 function Contactus() {
     return (
         <>
@@ -40,6 +41,13 @@ function Contactus() {
                         </form>
                     </div>
                 </div>
+            </div>
+            <div className='container-fluid p-0 mt-lg-5'>
+                <img src={map} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='map'/>
+                <img src={mapmob} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='mapmob'/>
+            </div>
+            <div className='container-fluid p-0'>
+                <Footer/>
             </div>
         </>
     );

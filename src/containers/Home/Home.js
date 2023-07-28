@@ -2,18 +2,9 @@ import React, { useState } from 'react';
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import homecover1 from '../../assests/Homepage/homecover1.png'
-import arrow3 from '../../assests/Homepage/arrow3.svg'
 import { HiOutlineMinus } from 'react-icons/hi'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import case1 from '../../assests/Homepage/case1.svg'
-import case2 from '../../assests/Homepage/case2.svg'
-import k42logo from '../../assests/Homepage/k42logo.svg'
-import doqfy from '../../assests/Homepage/daqfy.svg'
-import pichain from '../../assests/Homepage/pichainlogo.svg'
-import idea from '../../assests/Homepage/idea.svg'
-import ellipse from '../../assests/Homepage/ellipse.svg'
-import mvp from '../../assests/Homepage/mvp.svg'
-import success from '../../assests/Homepage/success.png'
 import map from '../../assests/Homepage/map.png'
 import whatsnew from '../../assests/Homepage/whatsnew.png'
 import news from '../../assests/Homepage/news.png'
@@ -29,8 +20,6 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'
 import homecovermob from '../../assests/Homepage/homecovermob.png'
-import leftc from '../../assests/Homepage/leftc.svg'
-import rightc from '../../assests/Homepage/rightc.svg'
 import php from '../../assests/industries/icon-php.svg'
 import dotnet from '../../assests/industries/icon-dotnet.svg'
 import phython from '../../assests/industries/icon-phython.svg'
@@ -88,13 +77,13 @@ function Home() {
     { id: 11, img: ai, text: 'Experience the convergence of cutting-edge AI technology & deep industry expertise. Our team collaborates to create intelligent, high-impact solutions that elevate your business processes and fuel growth. Harness bespoke AI-driven solutions to streamline operations and optimize your business.', icons: [] },
   ]
 
-  const options = {
-    items: 3,
-    loop: true,
-    margin: 30,
-    autoplay: true,
-    autoplayTimeout: 2000,
-  };
+  // const options = {
+  //   items: 3,
+  //   loop: true,
+  //   margin: 30,
+  //   autoplay: true,
+  //   autoplayTimeout: 2000,
+  // };
   return (
     <>
       <Navbar page={1} />
@@ -281,7 +270,7 @@ function Home() {
             <div className='card rounded-0 border-0' style={{ backgroundColor: '#EDFCFF', boxShadow: '2px 2px 10px -6px black' }}>
               <ul className="nav nav-tabs ">
                 <li className="nav-item  dropdown col-12 d-flex">
-                  <a className="nav-link col-10 text-dark " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{text == '' ? 'Select' : text}</a>
+                  <a className="nav-link col-10 text-dark " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">{text === '' ? 'Select' : text}</a>
                   <RiArrowDropDownLine data-bs-toggle="dropdown" href="#" size='40px' className='col-2' />
                   <ul className="dropdown-menu col-12">
                     <li><a className="dropdown-item " data-bs-toggle="tab" href="#tab1" onClick={() => { setNumber(1); setText('Product Development') }}>Product Development</a></li>
@@ -365,7 +354,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className={!number == 0 ? 'col-11 col-md-12 col-lg-4 p-2 p-md-3 p-lg-5 m-2 m-lg-0 contentbackground' : 'col-4'}>
+          <div className={!number === 0 ? 'col-11 col-md-12 col-lg-4 p-2 p-md-3 p-lg-5 m-2 m-lg-0 contentbackground' : 'col-4'}>
             {array.map((e) => {
               const { id, img, text, icons } = e;
               if (number === id) {
@@ -376,20 +365,18 @@ function Home() {
                       <br /><br />
                       <p className=''>{text}</p>
                       <div className='row'>
-                        {icons.map((a) => {
+                        {icons.map((a,index) => {
                           const { icon } = a;
                           return (
-                            <div className='col-2'>
+                            <div className='col-2' key={index}>
                               <img src={icon} className='img-fluid' alt='php' />
                             </div>
                           )
                         })}
-
                       </div>
                     </div>
                   </div>
                 )
-
               }
             })}
           </div>

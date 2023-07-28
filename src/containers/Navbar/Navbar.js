@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import t2clogo from '../../assests/t2clogo.svg'
 import arrow from '../../assests/arrow.svg'
 import { HiOutlineMinus } from 'react-icons/hi'
+import Contactus from '../Contactus/Contactus';
+import { useNavigate } from "react-router-dom";
 
 function Navbar(props) {
     const [line, setline] = useState();
@@ -10,6 +12,7 @@ function Navbar(props) {
 
         setline(props.page)
     }, [])
+    const navigate = useNavigate();
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -39,8 +42,8 @@ function Navbar(props) {
                             </li>
                             <hr className='d-block d-sm-block d-md-none d-lg-none' />
                             <li className="nav-item d-flex align-items-center ">
-                                <button className='btn btn-dark rounded-5 border border-0 text-light d-none d-sm-none d-md-block d-lg-block'>Get in Touch <img src={arrow} alt='arrow' width='10%' /></button>
-                                <button className='btn btn-dark rounded-5 border border-0 text-light col-12 d-block d-sm-block d-md-none d-lg-none'>Get in Touch <img src={arrow} alt='arrow' width='5%' /></button>
+                                <button className='btn btn-dark rounded-5 border border-0 text-light d-none d-sm-none d-md-block d-lg-block' onClick={()=>{ navigate("../Contactus");}}>Get in Touch <img src={arrow} alt='arrow' width='10%' /></button>
+                                <button className='btn btn-dark rounded-5 border border-0 text-light col-12 d-block d-sm-block d-md-none d-lg-none' onClick={()=>{ navigate("../Contactus");}}>Get in Touch <img src={arrow} alt='arrow' width='5%' /></button>
                             </li>
                         </ul>
                     </div>
