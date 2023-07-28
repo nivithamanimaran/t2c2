@@ -15,7 +15,7 @@ function Footer() {
                     <div className='row py-4'>
                         <div className='col-6 col-lg-4 col-md-4'>
                             <p className=''><HiOutlineMinus />Get in Touch</p>
-                            <p className='h2 fw-bolder d-none d-sm-none d-md-block'><span className='font-color'>Take filght</span> with T²C</p>
+                            <p className='h2 fw-bolder'><span className='font-color'>Take filght</span> with T²C</p>
                             {/* <p className='h2 fw-bolder '><span className='font-color'>Take filght</span> with T²C</p> */}
                             <div className='d-flex d-sm-flex d-md-flex d-lg-none'>
                                 <button className='btn btn-dark rounded-5 px-3 '>Talk to us  <img src={arrow2} alt='arrow2' width='12%' /></button>
