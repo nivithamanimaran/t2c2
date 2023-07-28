@@ -231,7 +231,7 @@ function Expertise() {
                     </div>
                     <div className='col-12 col-md-7 col-lg-7'>
                         <p className='mt-lg-0 mt-3'>
-                            your one-stop destination for innovative web and mobile app development services, designed to elevate your online presence and drive growth. Our team of experienced developers and creative designers collaborate with you.
+                            Your one-stop destination for innovative web and mobile app development services, designed to elevate your online presence and drive growth. Our team of experienced developers and creative designers collaborate with you.
                         </p>
                         <hr className='mt-lg-5 d-none d-sm-none d-md-block d-lg-block' />
                     </div>
@@ -250,7 +250,7 @@ function Expertise() {
                                 <br />
                                 <p className='h5'>Product Development - Mobile & Web</p>
                                 <br />
-                                <p className=''>your one-stop destination for innovative web and mobile app</p>
+                                <p className=''>Your one-stop destination for innovative web and mobile app</p>
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 px-lg-5 px-md-5 py-lg-0 py-md-0 py-5'>
                                 <img src={ecommerce} className='img-fluid' alt='ecommerce' width='20%' />

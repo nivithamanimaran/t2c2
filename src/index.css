@@ -40,7 +40,7 @@ code {
 
 .text-colormob2 {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
-  width: 106px;
+  width: 109px;
 }
 
 .text-color3 {
@@ -83,7 +83,7 @@ code {
 
 .textcolor3mob {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
-  width: 274px;
+  width: 282px;
 }
 
 /*navbar*/
@@ -109,7 +109,14 @@ code {
   position: absolute;
   margin-top: -176px
 }
-
+.font-color{
+  box-shadow: inset 0px -15px 0px 0px rgba(23,162,187,0.30);
+  width: 180px;
+  
+}
+.font-color2{
+  box-shadow: inset 0px -15px 0px 0px rgba(23,162,187,0.30);
+}
 /*home page*/
 .cardsubhead {
   font-size: 12px;
@@ -180,7 +187,7 @@ code {
 }
 
 .lapimgposition {
-  top: -140px;
+  top: -170px;
 }
 .buttonColor {
   background: #EDFCFF !important;
@@ -381,7 +388,7 @@ code {
 
 @media only screen and (max-width: 1919px) and (min-width: 1401px) {
   .bubbles {
-    margin-top: -5.7% !important;
+    margin-top: -6.7% !important;
   }
 }
 

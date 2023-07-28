@@ -25,8 +25,6 @@ import u2 from '../../assests/Homepage/u2.png';
 import ken42img from '../../assests/Homepage/ken42img.png';
 import doqfyimg from '../../assests/Homepage/doqfyimg.png';
 import piChainimg from '../../assests/Homepage/piChainimg.png';
-import ourprocess1 from '../../assests/Homepage/ourprocess1.svg'
-import ourprocess2 from '../../assests/Homepage/ourprocess2.svg';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css'
@@ -67,7 +65,9 @@ import development from '../../assests/Homepage/development.png'
 import ecommerce from '../../assests/Homepage/ecommerce.png'
 import team from '../../assests/Homepage/team.png'
 import ux from '../../assests/Homepage/ux.png'
-
+import realworld from '../../assests/Homepage/realworld.png'
+import processmob from '../../assests/Homepage/processmob.png'
+import '../../../src/index.css'
 
 function Home() {
   const [number, setNumber] = useState(1);
@@ -82,9 +82,9 @@ function Home() {
     { id: 5, img: development, text: 'We craft customized CRM systems to drive business growth. Our expert team stream lines sales, marketing, and customer support processes with tailored solutions. Experience innovative technology, industry expertise, & a customer-centric approach with T2C for maximum business potential.', icons: [{ icon: sales }, { icon: tripple }, { icon: wing }] },
     { id: 6, img: dev, text: 'Our team crafts bespoke software solutions to empower your business growth. With T2C, benefit from our innovative approach, cutting-edge technology, and commitment to excellence in transforming your ideas into powerful applications.', icons: [] },
     { id: 7, img: testing, text: 'We provide top-notch QA testing services to ensure your software meets industry standards. Our seasoned team uses advanced methodologies and tools to identify and resolve issues, ensuring flawless and reliable applications for your users.', icons: [] },
-    { id: 8, img: analytics, text: 'Unleash your datas potential with our skilled team. We design, implement, & optimize custom database systems, providing actionable insights for informed decision-making. we offers robust data management, advanced analytics &cutting -edge technology to fuel business growth.', icons: [{ icon: solution }, { icon: plugin }, { icon: book }, { icon: leaf }, { icon: mysql }] },
+    { id: 8, img: analytics, text: 'Unleash your datas potential with our skilled team. We design, implement, & optimize custom database systems, providing actionable insights for informed decision-making. We offers robust data management, advanced analytics & cutting-edge technology to fuel business growth.', icons: [{ icon: solution }, { icon: plugin }, { icon: book }, { icon: leaf }, { icon: mysql }] },
     { id: 9, img: team, text: 'Elevate your business with our customized tech powerhouse. Our skilled team collaborates seamlessly, delivering high-quality software solutions tailored to your unique needs. With T2C, benefit from flexible expertise and a dedicated team focused on accelerating your business growth.', icons: [] },
-    { id: 10, img: app, text: 'Revitalize your digital assets with T2C. We assess, re-engineer, and optimize legacy applications for improved efficiency, security, and scalability. Experience the power of ai-edge technology and a future-focused approach to transform your applications into agile, high-performing assets.', icons: [] },
+    { id: 10, img: app, text: 'Revitalize your digital assets with T2C. We assess, re-engineer, and optimize legacy applications for improved efficiency, security, and scalability. Experience the power of AI-edge technology and a future-focused approach to transform your applications into agile, high-performing assets.', icons: [] },
     { id: 11, img: ai, text: 'Experience the convergence of cutting-edge AI technology & deep industry expertise. Our team collaborates to create intelligent, high-impact solutions that elevate your business processes and fuel growth. Harness bespoke AI-driven solutions to streamline operations and optimize your business.', icons: [] },
   ]
 
@@ -113,13 +113,13 @@ function Home() {
                   <div className='container'>
                     <div className='row position-absolute d-none d-sm-none d-md-block d-lg-block text-position'>
                       <div className='col'>
-                        <p className='text-dark fw-bold startdayfont'>Start Big from <br /><span className='homeheadcolor'>Day One.</span>
+                        <p className=' text-dark fw-bold startdayfont'>Start Big from <br/><span className='homeheadcolor'>Day One.</span>
                         </p>
                         <p className='fs-6'>
                           We work with you in the trenches as your CTO,<br />
                           business strategy, design thinking.
                         </p>
-                        <button className='btn btn-dark rounded-5 mt-lg-4'>Learn More<FiArrowUpRight size='30' /></button>
+                        <button className='btn btn-dark rounded-5 mt-lg-4'>Learn More<FiArrowDownRight size='30' /></button>
                       </div>
                     </div>
                   </div>
@@ -219,15 +219,15 @@ function Home() {
       {/*Our Process*/}
       <div className='bgcolor mt-5 pb-lg-5 pb-md-5 mb-lg-5 mb-md-5 position-relative'>
         <div className='container pb-lg-5 mb-lg-5 pb-md-5 mb-md-5'>
-          <div className='row pt-5'>
+          <div className='row pt-5 mb-lg-5'>
             <div className='col-12 col-md-6 col-lg-6'>
               <p className=' text-light fw-light m-0'><HiOutlineMinus />How we Work</p>
               <p className='fs-1 text-light textcolor d-none d-sm-none d-md-block d-lg-block'><b>Our Process</b></p>
-              <p className='h2 text-light textcolormob4 d-block d-sm-block d-md-none d-lg-none'><b>Our Process</b></p>
+              <p className='h2 text-light textcolormob d-block d-sm-block d-md-none d-lg-none'><b>Our Process</b></p>
             </div>
             <div className='col-12 col-md-6 col-lg-6'>
               <div className='row'>
-                <div className='col-2 p-2 d-none d-sm-none d-md-none d-lg-flex justify-content-end'>
+                <div className='col-2 p-2 d-none d-sm-none d-md-flex d-lg-flex justify-content-end'>
                   <div className="vr " style={{ 'color': 'rgba(50, 197, 224, 1)', border: 'solid', height: '40px' }}></div>
                 </div>
                 <div className='col-12 col-md-10 col-lg-10 mt-2 '>
@@ -239,128 +239,14 @@ function Home() {
           </div>
 
           {/*cards overlap block*/}
-          <div className='row d-none d-sm-none d-md-none d-lg-flex justify-content-center p-lg-5 p-md-5 mb-lg-5'>
-            <div className='col-12 position-absolute'>
-              <img src={process} className='img-fluid' alt='process'/>
-              {/* <div className='row d-flex justify-content-center gap-5 relative'>
-                <div className='col-3 '>
-                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionleft d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0  border-0  p-4 circle" style={{ width: '100%', height: '320px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 roundedcard1'>
-                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-2'>
-                        <p className='mt-lg-3 text-center'><b>Idea to product</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-3 '>
-                  <img src={ourprocess1} className='img-fluid col-4 position-absolute shadowpositiontop d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px', boxShadow: '1px 8px 20px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 rounded-circle roundedcard1'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-3 '>
-                  <img src={ourprocess2} className='img-fluid col-4 position-absolute shadowpositionright d-none d-sm-none d-md-none d-lg-block' alt='ourprocess' width='32%' />
-                  <div className="card mt-5 mt-lg-0 circle p-4 border-0" style={{ width: '100%', height: '320px' }}>
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 rounded-circle roundedcard1'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life with<br /> guidance of experienced, <br />of experienced</p>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+          <div className='row d-none d-sm-none d-md-flex d-lg-flex justify-content-center '>
+            <div className='col-10 position-absolute'>
+              <img src={process} className='col-12 bubbles' alt='process' />
             </div>
           </div>
-          <div className='row d-flex d-sm-flex d-md-flex d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
-            <div className='col-12 mb-5'>
-              <div className='row d-flex justify-content-center gap-4 relative'>
-                <div className='col-10 col-lg-3 ps-4'>
-                  <img src={leftc} className='img-fluid position-absolute left' alt='left' />
-                  <div className="card mt-5 mt-lg-0 mobcard ">
-                    <div className='row d-flex justify-content-center'>
-                      <div className='col-4'>
-                        <div className='card p-3 mt-3 rounded-circle roundedcard1'>
-                          <img src={idea} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center '><b>Idea to product</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br />experienced, of <br />experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-10 col-lg-3 pe-3'>
-                  <img src={rightc} className='img-fluid position-absolute right' alt='left' />
-                  <div className="card mt-4 mt-lg-0 mobcard ">
-                    <div className='row d-flex justify-content-center  gap-4 relative'>
-                      <div className='col-4'>
-                        <div className='card p-2 rounded-circle roundedcard1 mt-3' >
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Future Ready</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to life <br /> with guidance<br /> of experienced,<br />
-                          of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-10 col-lg-3 ps-4'>
-                  <img src={leftc} className='img-fluid position-absolute left2' alt='left' />
-                  <div className="card mt-4 mt-lg-0 mobcard">
-                    <div className='row d-flex justify-content-center gap-4 relative'>
-                      <div className='col-4'>
-                        <div className='card p-2 rounded-circle roundedcard1 mt-3'>
-                          <img src={mvp} className='img-fluid d-flex mx-auto' alt='market' width='100%' />
-                        </div>
-                      </div>
-                    </div>
-                    <div className='row'>
-                      <div className='col p-3'>
-                        <p className='mt-lg-3 text-center'><b>Demand to Delivery</b></p>
-                        <p className="card-text fw-light text-center">Bring your idea to <br />life with guidance of <br /> experienced,<br /> of experienced</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className='row d-flex d-sm-flex d-md-none d-lg-none justify-content-center p-lg-5 p-md-5 pb-5'>
+            <div className='col-12 mb-5 d-flex justify-content-center'>
+              <img src={processmob} className='img-fluid' alt='processmob' />
             </div>
           </div>
         </div>
@@ -372,7 +258,7 @@ function Home() {
           <div className='row pt-lg-5 mt-lg-5'>
             <div className='col-12 col-md-6 col-lg-6'>
               <p className='fw-light m-0'><HiOutlineMinus />What we do</p>
-              <p className='h2 text-color d-none d-sm-none d-md-block d-lg-block'><b>Expertise</b></p>
+              <p className='fs-1 text-color d-none d-sm-none d-md-block d-lg-block'><b>Expertise</b></p>
               <p className='h2 text-colormob d-block d-sm-block d-md-none d-lg-none'><b>Expertise</b></p>
             </div>
             <div className='col-12 col-md-6 col-lg-6 '>
@@ -594,7 +480,7 @@ function Home() {
         </div>
       </div >
       {/*cards block*/}
-      < div className='container pt-5' >
+      < div className='container pt-lg-5 mb-lg-5 pb-lg-5' >
         <div className='row pt-5 d-none d-sm-none d-md-none d-lg-block'>
           <div className='col'>
             <div className='row d-flex justify-content-center '>
@@ -1036,7 +922,6 @@ function Home() {
                 <div className='col-12 col-md-10 col-lg-10'>
                   <p className='text-light fw-light'>Excellence. Our minimum bar for client delivery. </p>
                 </div>
-                <img src={success} className='img-fluid d-none d-sm-none d-md-block d-md-block' alt='success' />
               </div>
             </div>
           </div>
@@ -1099,6 +984,18 @@ function Home() {
                       aria-selected="false"
                       onClick={() => { setcolor(3) }}
                     >News</a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a
+                      className={color === 4 ? "nav-link active tabs" : "nav-link text-dark border-0"}
+                      id="ex1-tab-4"
+                      data-bs-toggle="tab"
+                      href="#ex1-tabs-4"
+                      role="tab"
+                      aria-controls="ex1-tabs-4"
+                      aria-selected="false"
+                      onClick={() => { setcolor(4) }}
+                    >Technologies</a>
                   </li>
                 </ul>
               </div>
@@ -1200,9 +1097,9 @@ function Home() {
           <div className='col-12 col-lg-6  mt-5 ps-lg-4'>
             <p><HiOutlineMinus />Join T²C and make an impact!</p>
             <p className='h3'>
-              Want to build the <br />future with us?
+              Want to build the future with us?
             </p>
-            <p><b>This is an opportunity for students who are eager to dominate the tech world.</b></p>
+            <p><b>This is an opportunity for students who are eager to dominate <br/>the tech world.</b></p>
             <p>If you are looking forward to expanding upon your skill sets, T²C is the place for you to thrive. Whether you are a coding whiz, a web developer or just starting out, we've got you covered. Get trained by experts and work on live projects right from Day 1 - gearing you to build the next-generation of products! Join hands with a tech-savvy clan who’s as passionate as you are!</p>
             <br />
             <button className='btn btn-dark rounded-5 px-3 '>Join us  <img src={arrow2} alt='arrow2' width='12%' /></button>

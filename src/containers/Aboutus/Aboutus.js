@@ -31,7 +31,7 @@ function Aboutus() {
             <p className='h4 text-light mt-lg-3 pt-lg-3 pt-3 mt-3 textcolor2'><b>About Us</b></p>
           </div>
           <div className='col-8 p-5 mt-lg-5 mt-3 pt-lg-5 pt-5 position-absolute  d-none d-sm-none d-md-block d-lg-block paraalign'>
-            <p className='fs-6 text-light mt-lg-5 pt-lg-5 pt-3 mt-3 p-5'>Technology drives our core operations. T²C, Our Technology Centre of Excellence, integrates business strategy, design thinking and engineering to enable technology disruptors. Our pursuit of growth entails recruiting over 50 brilliant young minds across varied sectors from time to time.</p>
+            <p className='fs-6 text-light mt-lg-5 pt-lg-5 pt-3 mt-3 p-5'>Technology drives our core operations. T²C, our Technology Centre of Excellence, integrates business strategy, design thinking and engineering to enable technology disruptors. Our pursuit of growth entails recruiting over 50 brilliant young minds across varied sectors from time to time.</p>
           </div>
         </div>
         <img src={aboutuscover} className='img-fluid p-0 m-0' alt='aboutuscover' width='100%' />
@@ -60,7 +60,7 @@ function Aboutus() {
             <div className='row'>
               <div className='col'>
                 <p className='textOverlap d-none d-sm-none d-md-none d-lg-block col-5'>
-                  Get Unmatched Strategy and Execution  Support with T²C
+                  <b>Get Unmatched Strategy and Execution  Support with T²C</b> <br />
                   T²C is your acting CTO that empowers you with a confluence of resources, associations and mentorship. We define effective digital strategies to equip you for the long run.
                 </p>
                 <p className='d-block d-sm-block d-md-block d-lg-none para-color p-3'>
@@ -79,7 +79,8 @@ function Aboutus() {
             <p className='h2 '><b>Moulding the leaders of tomorrow</b></p>
             <div className='container'>
               <div className='col'>
-                <p className='textOverlaptwo d-none d-sm-none d-md-none d-lg-block col-5'>The T²C tribe is build on the foundations of game intelligence.
+                <p className='textOverlaptwo d-none d-sm-none d-md-none d-lg-block col-5'><b
+                >The T²C tribe is build on the foundations of game intelligence.</b><br />
                   We coordinate one-on-one mentoring by matching individuals with complementary cognitive profiles to facilitate equity of resources and create individuals with critical acumen.
                 </p>
               </div>
@@ -96,7 +97,7 @@ function Aboutus() {
         </div>
       </div>
       <div className='container mt-lg-5 d-none d-sm-none d-md-block d-lg-block'>
-        <p className='pt-lg-5 d-flex justify-content-center'><HiOutlineMinus className='minus' />What we do<HiOutlineMinus className='minus' /></p>
+        <p className='pt-lg-5 d-flex justify-content-center'><HiOutlineMinus className='minus mt-1' />What we do<HiOutlineMinus className='minus mt-1' /></p>
         <p className='h2 d-flex justify-content-center'><b className='text-color5'>Clients We serve</b></p>
       </div>
       <div className='container mt-lg-5 d-block d-sm-block d-md-none d-lg-none'>
@@ -113,7 +114,7 @@ function Aboutus() {
               <img src={square} className='img-fluid' alt='square' />
             </div>
             <p className='h3  ml-lg-5'><b>Startups</b></p>
-            <p className='fs-6 ml-lg-5'>We are passionate about startups and believe in getting the fundamentals right. Our team has the necessary skill set to <br />create a prototype and develop an MVP aiding you launch  <br />faster and effectively.</p>
+            <p className='fs-6 ml-lg-5'>We are passionate about startups and believe in getting the fundamentals right. Our team has the necessary skill set to <br />create a prototype and develop an MVP aiding your launch  <br />faster and effectively.</p>
           </div>
         </div>
       </div>
@@ -144,7 +145,7 @@ function Aboutus() {
       <div className='container mt-5'>
         <div className='row'>
           <div className='col mx-lg-5'>
-            <p className='fs-6'><HiOutlineMinus />Teams trust us to Innovate and co-build</p>
+            <p className='fs-6'><HiOutlineMinus />Teams trust us to innovate and co-build</p>
           </div>
         </div>
         <div className='container'>
@@ -211,7 +212,7 @@ function Aboutus() {
                     <div className='col-12 col-lg-3'>
                       <img src={t2clogo} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='logo' width='70%' />
                       <img src={t2clogo} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='logo' width='30%' />
-                      <hr className='d-block d-sm-block d-md-none d-lg-none'/>
+                      <hr className='d-block d-sm-block d-md-none d-lg-none' />
                     </div>
                     <div className='col-12 col-lg-8'>
                       <div className='row'>
@@ -233,16 +234,22 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5 mt-lg-3 '>
+                    <div className='col-5'>
                       <h3 class="card-title"><b>Alt Dash</b></h3>
                     </div>
                     <div className='col-7 d-flex justify-content-end'>
                       <img src={cmo} className='img-fluid' alt='cmo' width='50%' />
                     </div>
                   </div>
-                  <p class="card-text">Marketing Center of Excellence</p>
+                  <div className='row'>
+                    <div className='col-10'>
+                      <p class="card-text">Marketing Center <br />of Excellence</p>
+                    </div>
+                    <div className='col-2 d-flex align-items-end'>
+                      <img src={arrow2} alt='arrow' className='img-fluid ' />
+                    </div>
+                  </div>
                   <div className='col d-flex justify-content-end'>
-                    <img src={arrow2} alt='arrow' className='img-fluid ' />
                   </div>
                 </div>
               </div>
@@ -251,16 +258,20 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5 mt-lg-3'>
+                    <div className='col-5'>
                       <h3 class="card-title"><b>Turbo Start</b></h3>
                     </div>
                     <div className='col-7 d-flex justify-content-end'>
                       <img src={cso} className='img-fluid' alt='cso' width='50%' />
                     </div>
                   </div>
-                  <p class="card-text"> Sales Center Of Excellence</p>
-                  <div className='col d-flex justify-content-end'>
-                    <img src={arrow2} alt='arrow' className='img-fluid ' />
+                  <div className='row'>
+                    <div className='col-10'>
+                      <p class="card-text">Sales Center <br />Of Excellence</p>
+                    </div>
+                    <div className='col-2 d-flex align-items-end'>
+                      <img src={arrow2} alt='arrow' className='img-fluid ' />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -269,16 +280,20 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5 mt-lg-2'>
+                    <div className='col-5'>
                       <h4 class="card-title"><b>Design Labs</b></h4>
                     </div>
                     <div className='col-7 d-flex justify-content-end'>
                       <img src={cxo} className='img-fluid' alt='cxo' width='50%' />
                     </div>
                   </div>
-                  <p class="card-text"> Design & Ux Center Of Excellence</p>
-                  <div className='col d-flex justify-content-end'>
-                    <img src={arrow2} alt='arrow' className='img-fluid ' />
+                  <div className='row'>
+                    <div className='col-10'>
+                      <p class="card-text">Design & Ux Center<br /> Of Excellence</p>
+                    </div>
+                    <div className='col-2 d-flex align-items-end'>
+                      <img src={arrow2} alt='arrow' className='img-fluid ' />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -287,16 +302,20 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5 mt-lg-3'>
+                    <div className='col-6'>
                       <h5 class="card-title"><b>Strategy Qore</b></h5>
                     </div>
-                    <div className='col-7 d-flex justify-content-end'>
+                    <div className='col-6 d-flex justify-content-end'>
                       <img src={cfo} className='img-fluid' alt='cfo' width='50%' />
                     </div>
                   </div>
-                  <p class="card-text">Investment Banking Center of Excellence</p>
-                  <div className='col d-flex justify-content-end'>
-                    <img src={arrow2} alt='arrow' className='img-fluid ' />
+                  <div className='row'>
+                    <div className='col-10'>
+                      <p class="card-text">Investment Banking<br /> Center of Excellence</p>
+                    </div>
+                    <div className='col-2 d-flex align-items-end'>
+                      <img src={arrow2} alt='arrow' className='img-fluid ' />
+                    </div>
                   </div>
                 </div>
               </div>
