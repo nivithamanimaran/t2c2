@@ -5,6 +5,7 @@ import homecover1 from '../../assests/Homepage/homecover1.png'
 import { HiOutlineMinus } from 'react-icons/hi'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import case1 from '../../assests/Homepage/case1.svg'
+import case2 from '../../assests/Homepage/case2.svg'
 import map from '../../assests/Homepage/map.png'
 import whatsnew from '../../assests/Homepage/whatsnew.png'
 import news from '../../assests/Homepage/news.png'
@@ -56,7 +57,6 @@ import team from '../../assests/Homepage/team.png'
 import ux from '../../assests/Homepage/ux.png'
 import realworld from '../../assests/Homepage/realworld.png'
 import processmob from '../../assests/Homepage/processmob.png'
-import '../../../src/index.css'
 
 function Home() {
   const [number, setNumber] = useState(1);
@@ -121,7 +121,7 @@ function Home() {
                         <img src={homecovermob} alt='homecoverimg' className='img-fluid col-12' />
                       </div>
                     </div>
-                    <div className='row  bottom-50 d-block d-sm-block d-md-none d-lg-none d-flex text-center'>
+                    <div className='row  bottom-50 d-block d-sm-block d-md-none d-lg-none mx-4'>
                       <div className='col'>
                         <p className='h1 text-dark fw-bold'>Start Big from <br /><span className='homeheadcolor'>Day One.</span>
                         </p>
@@ -266,7 +266,7 @@ function Home() {
       </div>
       <div className='container'>
         <div className='row d-block d-sm-block d-md-block d-lg-none'>
-          <div className='col-12'>
+        <div className='col-12'>
             <div className='card rounded-0 border-0' style={{ backgroundColor: '#EDFCFF', boxShadow: '2px 2px 10px -6px black' }}>
               <ul className="nav nav-tabs ">
                 <li className="nav-item  dropdown col-12 d-flex">
@@ -288,10 +288,9 @@ function Home() {
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
-        <div className='row p-4'>
+        <div className='row '>
           <div className='col-4 p-0 d-none d-sm-none d-md-none d-lg-block'>
             <div className={number === 1 ? 'px-lg-4 px-md-4 py-lg-3 py-md-2 buttonbackgroundradiusleft' : 'px-lg-4 px-md-4 py-lg-3 py-md-2'}>
               <div className={number === 1 ? 'row border border-0 rounded-5 p-3 buttonColor' : 'row border border-2 rounded-5 p-3 buttonColorhover'} onClick={() => { setNumber(1) }}>
@@ -354,7 +353,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className={!number === 0 ? 'col-11 col-md-12 col-lg-4 p-2 p-md-3 p-lg-5 m-2 m-lg-0 contentbackground' : 'col-4'}>
+          <div className={!number == 0 ? 'col-11 col-md-12 col-lg-4 p-2 p-md-3 p-lg-5 m-2 m-lg-0 contentbackground' : 'col-4'}>
             {array.map((e) => {
               const { id, img, text, icons } = e;
               if (number === id) {
@@ -373,10 +372,12 @@ function Home() {
                             </div>
                           )
                         })}
+
                       </div>
                     </div>
                   </div>
                 )
+
               }
             })}
           </div>
@@ -448,7 +449,7 @@ function Home() {
       <br />
       {/*Explore Our Projects block*/}
       < div className='container mt-lg-4' >
-        <div className='row py-5 mb-5'>
+        <div className='row py-3 py-md-3 py-lg-5 mb-0 mb-md-3 mb-lg-5'>
           <div className='col-12 col-md-6 col-lg-6'>
             <p className='fw-light m-0'><HiOutlineMinus />Explore Our Projects</p>
             <p className='h2 text-color3 d-none d-sm-none d-md-block d-lg-block'><b>Case Studies</b></p>
@@ -503,7 +504,7 @@ function Home() {
               </div>
               <div className='col-12 col-lg-4 col-md-4'>
                 <div className='card cardhover'>
-                  <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
+                  <img src={case2} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                   <div className='row px-4 pt-5 mt-5 '>
                     <div className='col border-1 border-end border-dark'>
                       <p className='cardsubhead'><b>$30K</b></p>
@@ -609,7 +610,7 @@ function Home() {
                 <div className='row pt-5 mt-5'>
                   <div className='col-12 col-lg-4 col-md-12 pt-5'>
                     <div className='card cardhover pt-5'>
-                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
+                      <img src={case2} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
                       <div className='row px-4 pt-5 mt-5 '>
                         <div className='col border-1 border-end border-dark'>
                           <p className='cardsubhead'><b>$30K</b></p>
@@ -684,8 +685,8 @@ function Home() {
                 <div className='row pt-5 mt-5'>
                   <div className='col-12 col-lg-4 col-md-12 pt-5'>
                     <div className='card cardhover pt-5'>
-                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
-                      <div className='row px-4 pt-5 mt-5 '>
+                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgpositionmob' />
+                      <div className='row px-4 pt-5 mt-2 '>
                         <div className='col border-1 border-end border-dark'>
                           <p className='cardsubhead'><b>$30K</b></p>
                           <p className='cardsubhead'>MVP cost</p>
@@ -718,8 +719,8 @@ function Home() {
                 <div className='row pt-5 mt-5'>
                   <div className='col-12 col-lg-4 col-md-12 pt-5'>
                     <div className='card cardhover pt-5'>
-                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
-                      <div className='row px-4 pt-5 mt-5 '>
+                      <img src={case2} alt='case1' className='img-fliud col-12 position-absolute lapimgpositionmob' />
+                      <div className='row px-4 pt-5 mt-2 '>
                         <div className='col border-1 border-end border-dark'>
                           <p className='cardsubhead'><b>$30K</b></p>
                           <p className='cardsubhead'>MVP cost</p>
@@ -752,8 +753,8 @@ function Home() {
                 <div className='row pt-5 mt-5'>
                   <div className='col-12 col-lg-4 col-md-12 pt-5'>
                     <div className='card cardhover pt-5'>
-                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgposition' />
-                      <div className='row px-4 pt-5 mt-5 '>
+                      <img src={case1} alt='case1' className='img-fliud col-12 position-absolute lapimgpositionmob' />
+                      <div className='row px-4 pt-5 mt-2 '>
                         <div className='col border-1 border-end border-dark'>
                           <p className='cardsubhead'><b>$30K</b></p>
                           <p className='cardsubhead'>MVP cost</p>
@@ -783,7 +784,7 @@ function Home() {
                 </div>
               </div>
 
-            </OwlCarousel>;
+            </OwlCarousel>
           </div>
         </div>
       </div >
@@ -792,7 +793,7 @@ function Home() {
       {/*Real World Success block*/}
       < div className='container-fluid bgcolor mt-lg-5 d-block d-sm-block d-md-block d-lg-none' >
         <div className='container mt-lg-5'>
-          <div className='row py-5'>
+          <div className='row pt-5'>
             <div className='col-12 col-md-6 col-lg-6 mt-lg-5'>
               <p className=' text-light fw-light m-0'><HiOutlineMinus />Giving Push to your Growth</p>
               <p className='h2 text-light '><b><span className='textcolor'>Real World</span> Success</b></p>
@@ -935,10 +936,10 @@ function Home() {
           <div className='col-12 col-lg-6  mt-5'>
             <div className='row d-flex justify-content-end'>
               <div className='col '>
-                <ul className="nav nav-tabs mb-3 d-flex justify-content-lg-end " id="ex1" role="tablist">
-                  <li className="nav-item" role="presentation">
+                <ul className="nav nav-tabs mb-3 d-flex justify-content-lg-end border-0" id="ex1" role="tablist">
+                  <li className="nav-item border-bottom border-1 border-dark" role="presentation">
                     <a
-                      className={color === 1 ? "nav-link active tabs" : "nav-link text-dark  border-0"}
+                      className={color === 1 ? "nav-link active tabs tabtext" : "nav-link text-dark  border-0 tabtext"}
                       id="ex1-tab-1"
                       data-bs-toggle="tab"
                       href="#ex1-tabs-1"
@@ -948,9 +949,9 @@ function Home() {
                       onClick={() => { setcolor(1) }}
                     >Whats New</a>
                   </li>
-                  <li className="nav-item" role="presentation">
+                  <li className="nav-item border-bottom border-1 border-dark" role="presentation">
                     <a
-                      className={color === 2 ? "nav-link active  tabs" : "nav-link  text-dark border-0"}
+                      className={color === 2 ? "nav-link active  tabs tabtext" : "nav-link  text-dark border-0 tabtext"}
                       id="ex1-tab-2"
                       data-bs-toggle="tab"
                       href="#ex1-tabs-2"
@@ -960,9 +961,9 @@ function Home() {
                       onClick={() => { setcolor(2) }}
                     >Security</a>
                   </li>
-                  <li className="nav-item" role="presentation">
+                  <li className="nav-item border-bottom border-1 border-dark" role="presentation">
                     <a
-                      className={color === 3 ? "nav-link active tabs" : "nav-link text-dark border-0"}
+                      className={color === 3 ? "nav-link active tabs tabtext" : "nav-link text-dark border-0 tabtext"}
                       id="ex1-tab-3"
                       data-bs-toggle="tab"
                       href="#ex1-tabs-3"
@@ -972,9 +973,9 @@ function Home() {
                       onClick={() => { setcolor(3) }}
                     >News</a>
                   </li>
-                  <li className="nav-item" role="presentation">
+                  <li className="nav-item border-bottom border-1 border-dark" role="presentation">
                     <a
-                      className={color === 4 ? "nav-link active tabs" : "nav-link text-dark border-0"}
+                      className={color === 4 ? "nav-link active tabs tabtext" : "nav-link text-dark border-0 tabtext"}
                       id="ex1-tab-4"
                       data-bs-toggle="tab"
                       href="#ex1-tabs-4"
@@ -999,23 +1000,23 @@ function Home() {
           >
             {/*tab content1 */}
             <div className='row'>
-              <div className='col-12 col-lg-4 mt-5 mt-lg-0'>
+              <div className='col-12 col-md-4 col-lg-4 mt-5 mt-lg-0'>
                 <img src={whatsnew} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Whats New</p>
+                <p className='slidecolor mt-3'><i>Whats New</i></p>
                 <p className='h4'>
                   Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4  mt-5 mt-lg-0'>
+              <div className='col-12 col-md-4 col-lg-4  mt-5 mt-lg-0'>
                 <img src={whatsnew} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Whats New</p>
+                <p className='slidecolor mt-3'><i>Whats New</i></p>
                 <p className='h4'>
                   Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4 mt-5 mt-lg-0'>
+              <div className='col-12 col-md-4 col-lg-4 mt-5 mt-lg-0'>
                 <img src={whatsnew} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Whats New</p>
+                <p className='slidecolor mt-3'><i>Whats New</i></p>
                 <p className='h4'>
                   Why oracle database runs best on oracle linux
                 </p>
@@ -1025,21 +1026,21 @@ function Home() {
           {/*tab content2 */}
           <div className="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
             <div className='row'>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={news} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>News</p>
+                <p className='slidecolor mt-3'><i>News</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={news} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>News</p>
+                <p className='slidecolor mt-3'><i>News</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={news} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>News</p>
+                <p className='slidecolor mt-3'><i>News</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>
@@ -1049,21 +1050,21 @@ function Home() {
           {/*tab content3 */}
           <div className="tab-pane fade" id="ex1-tabs-3" role="tabpanel" aria-labelledby="ex1-tab-3">
             <div className='row'>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={security} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Security</p>
+                <p className='slidecolor mt-3'><i>Security</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={security} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Security</p>
+                <p className='slidecolor mt-3'><i>Security</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>
-              <div className='col-12 col-lg-4'>
+              <div className='col-12 col-md-4  col-lg-4'>
                 <img src={security} className='img-fluid' alt='whatsnew' />
-                <p className='slidecolor mt-3'>Security</p>
+                <p className='slidecolor mt-3'><i>Security</i></p>
                 <p className='h4'>Why oracle database runs best on oracle linux
                 </p>
               </div>

@@ -27,10 +27,13 @@ code {
 
   }
 }
+.getintouchline{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+}
 
 .text-color {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
-  width: 139px;
+  width: 169px;
 }
 
 .text-colormob {
@@ -50,7 +53,7 @@ code {
 
 .text-color3mob {
   box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
-  width: 145px;
+  width: 146px;
 }
 
 .text-color4 {
@@ -72,10 +75,12 @@ code {
   box-shadow: inset 0px -13px 0px 0px rgba(0, 115, 136, 1);
   width: 134px;
 }
+
 .textcolormob4 {
   box-shadow: inset 0px -13px 0px 0px rgba(0, 115, 136, 1);
   width: 139px;
 }
+
 .textcolor2 {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
   width: 105px;
@@ -85,7 +90,10 @@ code {
   box-shadow: inset 0px -15px 0px 0px rgba(0, 115, 136, 1);
   width: 282px;
 }
-
+.text-expertise{
+  box-shadow: inset 0px -15px 0px 0px rgba((25, 143, 165, 1));
+  width: 138px;
+}
 /*navbar*/
 .navmenucolor {
   color: #0799B8;
@@ -109,14 +117,17 @@ code {
   position: absolute;
   margin-top: -176px
 }
-.font-color{
-  box-shadow: inset 0px -15px 0px 0px rgba(23,162,187,0.30);
+
+.font-color {
+  box-shadow: inset 0px -15px 0px 0px rgba(23, 162, 187, 0.30);
   width: 180px;
-  
+
 }
-.font-color2{
-  box-shadow: inset 0px -15px 0px 0px rgba(23,162,187,0.30);
+
+.font-color2 {
+  box-shadow: inset 0px -15px 0px 0px rgba(23, 162, 187, 0.30);
 }
+
 /*home page*/
 .cardsubhead {
   font-size: 12px;
@@ -189,6 +200,10 @@ code {
 .lapimgposition {
   top: -170px;
 }
+.lapimgpositionmob {
+  top: -100px;
+}
+
 .buttonColor {
   background: #EDFCFF !important;
   cursor: pointer;
@@ -234,13 +249,26 @@ code {
   top: -60px;
   left: 440px;
   width: 32%
+} 
+@media only screen and (max-width: 600px) {
+
+  .tabtext{
+    font-size: 12px !important;
+  }
+  .icon-size{
+    width: 15% !important;
+  }
+}
+
+.pagenumber{
+  font-size: 12px !important;
 }
 
 .tabs {
   border-top: none !important;
   border-left: none !important;
   border-right: none !important;
-  border-bottom: 2px solid rgba(50, 197, 224, 1) !important;
+  border-bottom: 3px solid rgba(50, 197, 224, 1) !important;
   color: #007296 !important;
 }
 
@@ -367,15 +395,18 @@ code {
 }
 
 /*contact us*/
-.headalign2 {
-  position: absolute;
-  padding: 28px;
-  padding-left: 10%;
-  top: 35%
+@media only screen and (min-width: 1000px) {
+  .ourproductexperttext{
+    font-size: 38px !important;
+  }
 }
 
-.inputcolor:valid {
-  background: #EEEEEE;
+.textareacolor{
+  background: #EEEEEE !important;
+}
+.inputcolor {
+  background: #EEEEEE !important;
+  height: 65px !important;
 }
 
 
@@ -397,13 +428,42 @@ code {
     margin-top: -42px !important
   }
 }
+
 @media only screen and (max-width: 1030px) and (min-width:1024px) {
   .bubbles {
     margin-top: -5px !important
   }
 }
-  @media only screen and (max-width: 1023px) and (min-width:768px) {
-    .bubbles {
-      margin-top: 34px !important
-    }
+
+@media only screen and (max-width: 1023px) and (min-width:768px) {
+  .bubbles {
+    margin-top: 34px !important
   }
+}
+
+/*insights*/
+.paginationcolor{
+  background-color: #E9E9E9 !important;
+  color: black !important;
+}
+.paginationcoloractive{
+  background-color: #B9D5FE!important;
+  color: black !important;
+}
+.insight-head {
+  top: 55%;
+  left: 45%;
+}
+
+.headtext-color {
+  box-shadow: inset 0px -15px 0px 0px rgba(25, 143, 165, 1);
+}
+.headtext2-color{
+ box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+ width:164px;
+}
+
+.headtextmob-color{
+  box-shadow: inset 0px -15px 0px 0px rgba(50, 197, 224, 1);
+  width:128px;
+ }

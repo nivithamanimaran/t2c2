@@ -7,6 +7,9 @@ import Footer from './containers/Footer/Footer';
 import Expertise from './containers/Expertize/Expertise';
 import Aboutus from './containers/Aboutus/Aboutus';
 import Contactus from './containers/Contactus/Contactus';
+import Insight from './containers/Insights/Insight';
+import Casestudy from './containers/casestudy/Casestudy';
+
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
      <Route path='expertise' element={<Expertise/>}/>
      <Route path='aboutus' element={<Aboutus/>}/>
      <Route path='contactus' element={<Contactus/>}/>
+     <Route path='insights' element={<Insight/>}/>
+     <Route path='casestudy' element={<Casestudy/>}/>
       </Routes>
     </BrowserRouter>
     </>

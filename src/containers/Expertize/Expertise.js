@@ -53,6 +53,7 @@ import plugin from '../../assests/industries/icon-plugin.svg'
 import book from '../../assests/industries/icon-book.svg'
 import leaf from '../../assests/industries/icon-leaf.svg'
 import mysql from '../../assests/industries/icon-mysql.svg'
+import productmob from '../../assests/industries/productmob.png'
 import Footer from '../Footer/Footer'
 
 function Expertise() {
@@ -62,7 +63,7 @@ function Expertise() {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col d-flex justify-content-center mt-lg-5 mt-3 pt-lg-5 pt-5 position-absolute'>
-                        <p className='h2 text-light mt-lg-5 pt-lg-5 pt-3 mt-3 text-color d-none d-sm-none d-md-block d-lg-block'><b>Expertise</b></p>
+                        <p className='h2 text-light mt-lg-5 pt-lg-5 pt-3 mt-3 text-color d-none d-sm-none d-md-block d-lg-block text-expertise'><b>Expertise</b></p>
                         <p className='h2 text-light mt-lg-5 pt-lg-5 pt-3 mt-3 text-colormob d-block d-sm-block d-md-none d-lg-none'><b>Expertise</b></p>
                     </div>
                     <div className='col p-0'>
@@ -216,13 +217,14 @@ function Expertise() {
 
             <div className='container mt-lg-5  pt-lg-5'>
                 <div className='row mt-lg-5 pt-lg-5'>
-                    <hr />
+                    <hr className='d-none d-sm-none d-md-block d-lg-block' />
                 </div>
                 <div className='row'>
                     <div className='col-12 col-md-5 col-lg-5'>
                         <div className='row d-flex align-items-center'>
                             <div className='col-2 col-md-2 col-lg-2'>
-                                <img src={producticon} className='img-fluid' alt='producticon' width='50%' />
+                                <img src={producticon} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='producticon' width='50%' />
+                                <img src={producticon} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='producticon' width='80%' />
                             </div>
                             <div className='col-10 col-md-10 col-lg-10 d-flex align-items-center'>
                                 <p className='h4'>Product & App Development</p>
@@ -240,12 +242,13 @@ function Expertise() {
             <div className='container-fluid'>
                 <div className='row py-lg-5 py-md-5'>
                     <div className='col-12  col-lg-5 py-lg-5 py-md-5 '>
-                        <img src={product} className='img-fluid' alt='product and developement' />
+                        <img src={product} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='product and developement' />
+                        <img src={productmob} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='product and developement'/>
                     </div>
                     <div className='col-12  col-lg-7 px-lg-5 px-md-5 py-lg-0 py-md-0 py-5'>
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6 px-lg-5 px-md-5'>
-                                <img src={mobile} className='img-fluid' alt='mobile' width='20%' />
+                                <img src={mobile} className='img-fluid  icon-size' alt='mobile' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h5'>Product Development - Mobile & Web</p>
@@ -253,7 +256,7 @@ function Expertise() {
                                 <p className=''>Your one-stop destination for innovative web and mobile app</p>
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 px-lg-5 px-md-5 py-lg-0 py-md-0 py-5'>
-                                <img src={ecommerce} className='img-fluid' alt='ecommerce' width='20%' />
+                                <img src={ecommerce} className='img-fluid icon-size' alt='ecommerce' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h5'>Ecommerce Development</p>
@@ -261,7 +264,7 @@ function Expertise() {
                                 <p className=''>A user-centric approach is at the heart of every interaction design and experience we create. Our process starts with consumer research and ends with serving customer delight.</p>
                             </div>
                             <div className='col-12 col-md-6 col-lg-6 px-lg-5 px-md-5'>
-                                <img src={crm} className='img-fluid' alt='ecommerce' width='20%' />
+                                <img src={crm} className='img-fluid icon-size' alt='ecommerce' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h5'>CRM Development</p>
@@ -329,7 +332,8 @@ function Expertise() {
             <div className='container mt-5'>
                 <div className='row px-lg-3'>
                     <div className='col-2 col-lg-1'>
-                        <img src={experience} className='img-fluid' alt='producticon' width='50%' />
+                        <img src={experience} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='producticon' width='50%' />
+                        <img src={experience} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='producticon' width='80%' />
                     </div>
                     <div className='col-10 col-lg-6 d-flex align-items-center'>
                         <p className='h4'>Experience Design & Modernization</p>
@@ -343,13 +347,13 @@ function Expertise() {
                             We provide comprehensive resources, expert insights, and practical guidance to help you navigate the ever-evolving world of DevOps and cloud computing.
                         </p>
                         <hr className='mt-lg-5 d-none d-sm-none d-md-block d-lg-block' />
-                        <div className='col-12 col-lg-6 p-5 d-block d-sm-block d-md-block d-lg-none'>
+                        <div className='col-12 col-lg-6 p-lg-5 d-block d-sm-block d-md-block d-lg-none'>
                             <img src={experiencedesign} className='img-fluid' alt='product and developement' />
                         </div>
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6'>
                                 <br />
-                                <img src={ui} className='img-fluid' alt='ecommerce' width='20%' />
+                                <img src={ui} className='img-fluid icon-size' alt='ecommerce' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h4'>UI / UX</p>
@@ -358,13 +362,13 @@ function Expertise() {
                             </div>
                             <div className='col-12 col-md-6 col-lg-6'>
                                 <br />
-                                <img src={jira} className='img-fluid' alt='ecommerce' width='20%' />
+                                <img src={jira} className='img-fluid icon-size' alt='ecommerce' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h4'>Application Modernization</p>
                                 <p className='fs-6'>Revitalize your digital assets and ensure their relevance in today's </p>
                             </div>
-                            <div className='col-12 mt-lg-5'>
+                            <div className='col-12 mt-lg-5 mt-3'>
                                 <div className='row'>
                                     <div className='col-2 col-lg-1'>
                                         <img src={figma} alt='' className='img-fluid' />
@@ -400,7 +404,8 @@ function Expertise() {
             <div className='container mt-5'>
                 <div className='row px-lg-3'>
                     <div className='col-2 col-lg-1'>
-                        <img src={bracket} className='img-fluid' alt='producticon' width='50%' />
+                        <img src={bracket} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='producticon' width='50%' />
+                        <img src={bracket} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='producticon' width='80%' />
                     </div>
                     <div className='col-10 col-lg-4'>
                         <p className='h4'>Custom Development</p>
@@ -425,7 +430,7 @@ function Expertise() {
 
                         <div className='row'>
                             <div className='col-12 col-md-6 col-lg-6'>
-                                <img src={code} className='img-fluid' alt='mobile' width='20%' />
+                                <img src={code} className='img-fluid icon-size' alt='mobile' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h4'>Custom Software Development</p>
@@ -434,7 +439,7 @@ function Expertise() {
                             </div>
                             <br />
                             <div className='col-12 col-md-6 col-lg-6'>
-                                <img src={group} className='img-fluid' alt='ecommerce' width='20%' />
+                                <img src={group} className='img-fluid icon-size' alt='ecommerce' width='20%' />
                                 <br />
                                 <br />
                                 <p className='h4'>Dedicated Development Team</p>
@@ -474,7 +479,8 @@ function Expertise() {
             <div className='container my-lg-5'>
                 <div className='row'>
                     <div className='col-2 col-lg-1'>
-                        <img src={engineer} className='img-fluid' alt='engineering and testing' width='50%' />
+                        <img src={engineer} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='engineering and testing' width='50%' />
+                        <img src={engineer} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='engineering and testing' width='80%' />
                     </div>
                     <div className='col-10 col-lg-11'>
                         <p className='h4'>Engineering & Testing</p>
@@ -496,7 +502,7 @@ function Expertise() {
                         </div>
                         <div className='row mt-lg-5 mt-5'>
                             <div className='col-12 col-md-12 col-lg-6'>
-                                <img src={clouddownload} className='img-fluid' alt='ui' width='20%' />
+                                <img src={clouddownload} className='img-fluid icon-size' alt='ui' width='20%' />
                                 <br /> <br />
                                 <p className='h4'>Dev Ops & Cloud</p>
                                 <br />
@@ -505,7 +511,7 @@ function Expertise() {
                                 </p>
                             </div>
                             <div className='col-12 col-md-12 col-lg-6'>
-                                <img src={exam} className='img-fluid' alt='jira' width='20%' />
+                                <img src={exam} className='img-fluid icon-size' alt='jira' width='20%' />
                                 <br /> <br />
                                 <p className='h4'>Software QA & Testing</p>
                                 <br />
@@ -530,7 +536,8 @@ function Expertise() {
             <div className='container my-lg-5'>
                 <div className='row'>
                     <div className='col-2 col-lg-1'>
-                        <img src={ai} className='img-fluid' alt='experience' width='50%' />
+                        <img src={ai} className='img-fluid d-none d-sm-none d-md-block d-lg-block' alt='experience' width='60%' />
+                        <img src={ai} className='img-fluid d-block d-sm-block d-md-none d-lg-none' alt='experience' width='90%' />
                     </div>
                     <div className='col-10 col-lg-11'>
                         <p className='h4'>AI & Analytics</p>
@@ -541,7 +548,7 @@ function Expertise() {
                     <div className='col-12 col-lg-5'>
                         <img src={analtics} className='img-fluid mt-lg-3' alt='custom developement' />
                     </div>
-                    <div className='col-12 col-lg-7 px-lg-5'>
+                    <div className='col-12 col-lg-7 px-lg-5 mt-3'>
                         <div className='row'>
                             <div className='col'>
                                 <p className='fs-6'>We provide comprehensive resources, expert insights, and practical guidance to help you navigate the ever-evolving world of DevOps and cloud computing. Discover best practices, optimize your workflows, and supercharge.
@@ -551,7 +558,7 @@ function Expertise() {
                         </div>
                         <div className='row mt-lg-3'>
                             <div className='col-12 col-md-12 col-lg-6'>
-                                <img src={artificial} className='img-fluid' alt='code' width='20%' />
+                                <img src={artificial} className='img-fluid icon-size' alt='code' width='20%' />
                                 <br /><br />
                                 <p className='h4'>Advanced AI</p>
                                 <p className='fs-6'>
@@ -559,9 +566,9 @@ function Expertise() {
                                 </p>
                             </div>
                             <div className='col-12 col-md-12 col-lg-6'>
-                                <img src={database} className='img-fluid mt-lg-3' alt='group' width='20%' />
+                                <img src={database} className='img-fluid mt-lg-3 icon-size' alt='group' width='20%' />
                                 <br />
-                                <p className='h4 mt-lg-2'>Database Dev & Analytics</p>
+                                <p className='h4 mt-lg-2 mt-2'>Database Dev & Analytics</p>
 
                                 <p className='fs-6'>your one-stop destination for innovative web and mobile app</p>
                             </div>

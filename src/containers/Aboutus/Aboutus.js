@@ -24,7 +24,7 @@ import Footer from '../Footer/Footer';
 function Aboutus() {
   return (
     <>
-      <Navbar page={3} />
+      <Navbar page={4} />
       <div className='container-fluid p-0'>
         <div className='row'>
           <div className='col-4 position-absolute p-5 mt-lg-5  d-none d-sm-none d-md-block  d-lg-block headalign'>
@@ -149,7 +149,7 @@ function Aboutus() {
           </div>
         </div>
         <div className='container'>
-          <div className='row gap-5 d-none d-sm-flex d-md-block d-lg-flex'>
+          <div className='row gap-5 d-none d-sm-none d-md-flex d-lg-flex'>
             <div className='col '>
               <img src={kennovate} className='img-fluid' alt='kennovate' />
             </div>
@@ -166,20 +166,20 @@ function Aboutus() {
               <img src={doqfy} className='img-fluid' alt='doqfy' />
             </div>
           </div>
-          <div className='row d-flex d-flex d-sm-flex d-md-none d-lg-none'>
-            <div className='col-3 '>
+          <div className='row d-flex d-sm-flex d-md-none d-lg-none'>
+            <div className='col-4 '>
               <img src={kennovate} className='img-fluid' alt='kennovate' />
             </div>
-            <div className='col-3 '>
+            <div className='col-4 '>
               <img src={transo} className='img-fluid' alt='transo' />
             </div>
-            <div className='col-3 '>
+            <div className='col-4 '>
               <img src={seminar} className='img-fluid' alt='seminar' />
             </div>
-            <div className='col-3 '>
+            <div className='col-4 '>
               <img src={turbo} className='img-fluid' alt='turbo' />
             </div>
-            <div className='col-3 '>
+            <div className='col-4 '>
               <img src={doqfy} className='img-fluid' alt='doqfy' />
             </div>
           </div>
@@ -234,11 +234,11 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5'>
-                      <h3 class="card-title"><b>Alt Dash</b></h3>
+                    <div className='col-7'>
+                      <h3 class="card-title"><b>Alt<br/> Dash</b></h3>
                     </div>
-                    <div className='col-7 d-flex justify-content-end'>
-                      <img src={cmo} className='img-fluid' alt='cmo' width='50%' />
+                    <div className='col-5 d-flex justify-content-end'>
+                      <img src={cmo} className='img-fluid' alt='cmo'  />
                     </div>
                   </div>
                   <div className='row'>
@@ -258,11 +258,11 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5'>
+                    <div className='col-7'>
                       <h3 class="card-title"><b>Turbo Start</b></h3>
                     </div>
-                    <div className='col-7 d-flex justify-content-end'>
-                      <img src={cso} className='img-fluid' alt='cso' width='50%' />
+                    <div className='col-5 d-flex justify-content-end'>
+                      <img src={cso} className='img-fluid' alt='cso'  />
                     </div>
                   </div>
                   <div className='row'>
@@ -280,11 +280,11 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-5'>
+                    <div className='col-7'>
                       <h4 class="card-title"><b>Design Labs</b></h4>
                     </div>
-                    <div className='col-7 d-flex justify-content-end'>
-                      <img src={cxo} className='img-fluid' alt='cxo' width='50%' />
+                    <div className='col-5 d-flex justify-content-end'>
+                      <img src={cxo} className='img-fluid' alt='cxo' />
                     </div>
                   </div>
                   <div className='row'>
@@ -302,11 +302,11 @@ function Aboutus() {
               <div class="card w-100 cardtopborder rounded-0">
                 <div class="card-body">
                   <div className='row'>
-                    <div className='col-6'>
+                    <div className='col-7'>
                       <h5 class="card-title"><b>Strategy Qore</b></h5>
                     </div>
-                    <div className='col-6 d-flex justify-content-end'>
-                      <img src={cfo} className='img-fluid' alt='cfo' width='50%' />
+                    <div className='col-5 d-flex justify-content-end'>
+                      <img src={cfo} className='img-fluid' alt='cfo'  />
                     </div>
                   </div>
                   <div className='row'>
